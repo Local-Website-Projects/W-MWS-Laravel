@@ -4,7 +4,8 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Chat;
 
-Route::get('/chat', [Chat::class, 'chat'])->name('chat');
+Route::get('/chat-test', [Chat::class, 'index']);
+Route::post('/chat-test/send', [Chat::class, 'chat'])->name('chat.send');
 
 
 Route::get('/', function () {return view('pages.home');})->name('home');

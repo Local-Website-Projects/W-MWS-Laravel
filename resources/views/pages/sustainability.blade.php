@@ -14,13 +14,13 @@
                 <div class="content-nav">
                     <ul>
                         <li>
-                            <a href="contact.php" class="ln ajax"><i class="fal fa-long-arrow-left"></i><span><strong>Contact Us</strong></span></a>
+                            <a href="{{route('contact')}}" class="ln ajax"><i class="fal fa-long-arrow-left"></i><span><strong>Contact Us</strong></span></a>
                             <div class="content-nav-media">
                                 <div class="bg"  data-bg="images/folio/5.jpg"></div>
                             </div>
                         </li>
                         <li>
-                            <a href="portfolio2.php" class="rn ajax"><span ><strong>See Products</strong></span> <i class="fal fa-long-arrow-right"></i></a>
+                            <a href="{{route('portfolio')}}" class="rn ajax"><span ><strong>See Products</strong></span> <i class="fal fa-long-arrow-right"></i></a>
                             <div class="content-nav-media">
                                 <div class="bg"  data-bg="images/folio/8.jpg"></div>
                             </div>

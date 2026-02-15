@@ -162,7 +162,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <a href="#" class="btn ajax  color-bg  fl-btn"><span>My Portfolio</span></a>
+                                    <a href="{{route('portfolio')}}" class="btn ajax  color-bg  fl-btn"><span>My Portfolio</span></a>
                                 </div>
                             </div>
                         </div>
@@ -278,7 +278,7 @@
                         <!--process-wrap   end-->
                         <div class="srv-link-text fl-wrap">
                             <h4>Ready to order your project ? Visit our contacts page :  </h4>
-                            <a href="contact.blade.php" class="btn ajax color-bg  fl-btn"><span>Contacts</span></a>
+                            <a href="{{route('contact')}}" class="btn ajax color-bg  fl-btn"><span>Contacts</span></a>
                         </div>
                     </div>
                     <div class="section-number"> <span>0</span>2. </div>

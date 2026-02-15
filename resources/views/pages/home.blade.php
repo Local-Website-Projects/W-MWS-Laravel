@@ -7,7 +7,7 @@
 @section('description', '')
 
 @section('content')
-    <div class="content full-height">
+    <div class="content full-height" data-pagetitle="Home">
         <div class="fl-wrap full-height hero-conatiner">
             <div class="hero-wrapper fl-wrap full-height hidden-item">
                 <span class="hc_dec"></span>

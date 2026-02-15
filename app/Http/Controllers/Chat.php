@@ -7,11 +7,16 @@ use App\Ai\Agents\CompanySupport;
 
 class Chat extends Controller
 {
-    public function chat(Request $request)
-    {
-        $bot = new CompanySupport();
+    public function index() {
+        return view('chat-test');
+    }
 
-        // The AI will first search the file, then decide to answer or use your fallback message
-        return $bot->prompt($request->input('message'));
+    public function chat(Request $request) {
+        $request->validate(['message' => 'required']);
+
+        $bot = new CompanySupport();
+        $response = $bot->prompt($request->input('message'));
+
+        return response()->json(['reply' => (string) $response]);
     }
 }
