@@ -1,0 +1,167 @@
+/* Floating Button */
+.mws-chat-btn {
+    position: fixed;
+    bottom: 90px;
+    right: 85px;
+    width: 60px;
+    height: 60px;
+    background: #f57500;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 1000;
+    transition: transform 0.3s;
+}
+.mws-chat-btn svg { width: 30px; height: 30px; }
+.mws-chat-btn:hover { transform: scale(1.1); }
+
+/* Chat Window */
+.mws-chat-window {
+    position: fixed;
+    bottom: 140px;
+    right: 150px;
+    width: 380px;
+    height: 500px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    z-index: 1001;
+    overflow: hidden;
+    font-family: sans-serif;
+    border: 1px solid #e0e0e0;
+}
+
+/* Header */
+.mws-chat-header {
+    background: #f57500;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mws-header-info strong { display: block; font-size: 14px; }
+.mws-header-info span { font-size: 10px; opacity: 0.8; }
+#mws-close-btn { background: none; border: none; color: white; font-size: 24px; cursor: pointer; }
+
+/* Body/Messages */
+.mws-chat-body {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background: #f8f9fa;
+    display: flex;
+    flex-direction: column; /* Stack messages vertically */
+    gap: 12px;
+}
+.mws-bubble {
+    max-width: 85%; /* Prevents bubbles from being too wide */
+    width: fit-content; /* Shrinks to text size */
+    padding: 10px 14px;
+    font-size: 13px;
+    line-height: 1.4;
+    word-wrap: break-word;
+
+    /* ADD THESE TWO LINES */
+    text-align: left;
+    display: inline-block;
+}
+.mws-incoming .mws-bubble { background: #1a4da1; color: white; border-top-left-radius: 0; }
+.mws-outgoing { align-self: flex-end; }
+.mws-outgoing .mws-bubble { background: #e9ecef; color: #333; border-top-right-radius: 0; border: 1px solid #dee2e6; }
+
+/* Footer/Input */
+.mws-chat-footer {
+    padding: 10px;
+    border-top: 1px solid #eee;
+    display: flex;
+    gap: 8px;
+}
+.mws-chat-footer input {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 8px 15px;
+    outline: none;
+    font-size: 13px;
+}
+.mws-chat-footer button {
+    background: #f57500;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Utils */
+.mws-hidden { display: none !important; }
+.mws-typing { font-size: 11px; color: #888; padding: 5px 15px; font-style: italic; }
+/* Individual Message Wrapper */
+.mws-msg {
+    display: flex;
+    width: 100%;
+    text-align: left; /* Ensures internal alignment defaults to left */
+}
+
+/* Incoming (AI) - Stays Left */
+/* Incoming (AI) - Stays Left */
+.mws-incoming {
+    justify-content: flex-start;
+}
+
+/* Outgoing (User) - Stays Right */
+.mws-outgoing {
+    justify-content: flex-end;
+}
+
+/* Styling for AI */
+.mws-incoming .mws-bubble {
+    background: #f57500;
+    color: white;
+    border-radius: 15px 15px 15px 0px;
+}
+
+/* Styling for User */
+.mws-outgoing .mws-bubble {
+    background: #ffffff;
+    color: #333;
+    border: 1px solid #dee2e6;
+    border-radius: 15px 15px 0px 15px;
+}
+
+@media screen and (max-width: 992px) {
+    /* Make the chat window wider on smaller screens */
+    .mws-chat-window {
+        width: 350px;
+        right: 15px;
+        bottom: 85px;
+        height: 450px;
+    }
+
+    /* Floating button adjustment */
+    .mws-chat-btn {
+        right: 10px;
+        bottom: 80px;
+    }
+
+    .mws-chat-btn svg {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+/* Optional: Extra small devices (Mobile Phones) */
+@media screen and (max-width: 480px) {
+    .mws-chat-window {
+        width: calc(100% - 30px); /* Nearly full width with margin */
+        height: 60vh; /* 80% of the screen height */
+        right: 15px;
+        left: 15px; /* Center it */
+    }
+}
