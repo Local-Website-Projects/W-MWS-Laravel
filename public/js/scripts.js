@@ -155,7 +155,7 @@ function initZonar() {
                     a.preventDefault();
                     $(".horizontal-grid-wrap").animate({
                         scrollLeft: 0
-                    }, 500);					
+                    }, 500);
                     var b = $(this).attr("data-filter");
                     setTimeout(function () {
                         d.isotope({
@@ -318,7 +318,7 @@ function initZonar() {
                     spaceBetween: 10,
                     grabCursor: true,
                     mousewheel: mouseContr,
-                    speed: 1400,
+                    speed: 1000,
                     direction: "horizontal",
                     scrollbar: {
                         el: '.hs_init',
@@ -378,7 +378,7 @@ function initZonar() {
             preloadImages: true,
             loop: true,
             grabCursor: true,
-            speed: 1400,
+            speed: 1000,
             spaceBetween: 0,
             effect: "slide",
 				init:false,
@@ -498,7 +498,7 @@ function initZonar() {
             grabCursor: true,
             mousewheel: true,
             parallax: true,
-            speed: 1400,
+            speed: 1000,
             effect: "slide",
 			init:false,
             autoplay: {
@@ -553,7 +553,7 @@ function initZonar() {
             grabCursor: true,
             mousewheel: false,
             parallax: false,
-            speed: 1400,
+            speed: 1000,
             navigation: {
                 nextEl: '.gc-slider-cont-next',
                 prevEl: '.gc-slider-cont-prev',
@@ -986,7 +986,7 @@ function initZonar() {
 			});
 		}
 		var greenIcon = L.icon({
-			iconUrl: 'images/marker.png',
+			iconUrl: '/images/marker.png',
 			iconSize: [40, 40],
 			popupAnchor: [0, -26]
 		});
@@ -1340,7 +1340,7 @@ function initvideo() {
     trueMobile = a.any();
     if (trueMobile) {
         $("  .background-vimeo , .background-youtube-wrapper ").remove();
-      
+
     }
 }
 if ($(".element-item").length > 0) {
@@ -1393,8 +1393,8 @@ $(function () {
 });
 document.addEventListener('gesturestart', function (e) {
     e.preventDefault();
-}); 
- 
+});
+
 //   Init All Functions------------------
 function readyFunctions() {
     initvideo();

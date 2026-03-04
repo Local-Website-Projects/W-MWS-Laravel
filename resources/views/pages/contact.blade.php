@@ -34,7 +34,7 @@
                     </div>
                     <div id="contact-form" class="fl-wrap">
                         <div id="message"></div>
-                        <form  class="custom-form" action="http://zonar.kwst.net/site/php/contact.php" name="contactform" id="contactform">
+                        <form  class="custom-form" action="#" name="contactform" id="contactform">
                             <fieldset>
                                 <div class="row">
                                     <div class="col-sm-6">

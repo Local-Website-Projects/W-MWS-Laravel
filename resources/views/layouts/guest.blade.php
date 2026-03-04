@@ -18,7 +18,7 @@
         <link type="text/css" rel="stylesheet" href="{{asset('css/color.css')}}">
         <link type="text/css" rel="stylesheet" href="{{asset('css/chat.css')}}">
         <!--=============== favicons ===============-->
-        <link rel="shortcut icon" href="{{asset('images/favicon.ico')}}">
+        <link rel="shortcut icon" href="{{asset('images/favicon.png')}}">
     </head>
     <body>
 

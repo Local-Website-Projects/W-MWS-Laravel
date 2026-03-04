@@ -162,7 +162,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <a href="{{route('portfolio')}}" class="btn ajax  color-bg  fl-btn"><span>My Portfolio</span></a>
+                                    <a href="{{route('portfolio')}}" class="btn ajax  color-bg  fl-btn"><span>Our Portfolio</span></a>
                                 </div>
                             </div>
                         </div>

@@ -74,7 +74,7 @@
                                 <a href="images/folio/1.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
                                 <div class="grid-det_category"><a href="#">Design  </a> <a href="#"> Branding</a></div>
                                 <div class="grid-det-item">
-                                    <a href="portfolio-single.html" class="ajax grid-det_link">Fitness Studio Website<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Fitness Studio Website<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -88,7 +88,7 @@
                                 <a href="images/folio/2.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
                                 <div class="grid-det_category"><a href="#">Design  </a> <a href="#"> UI/UX</a></div>
                                 <div class="grid-det-item">
-                                    <a href="portfolio-single.html" class="ajax grid-det_link">Architecture Agensy<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Architecture Agensy<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -102,7 +102,7 @@
                                 <a href="https://vimeo.com/6698875" class="grid-media-zoom   image-popup"><i class="far fa-play"></i></a>
                                 <div class="grid-det_category"><a href="#">Design  </a> <a href="#"> Photography</a></div>
                                 <div class="grid-det-item">
-                                    <a href="portfolio-single.html" class="ajax grid-det_link">Video Project<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Video Project<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -116,7 +116,7 @@
                                 <a href="images/folio/4.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
                                 <div class="grid-det_category"><a href="#">Design  </a> <a href="#"> Branding</a></div>
                                 <div class="grid-det-item">
-                                    <a href="portfolio-single.html" class="ajax grid-det_link">Photography Project<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Photography Project<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -130,7 +130,7 @@
                                 <a href="images/folio/5.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
                                 <div class="grid-det_category"><a href="#">Design  </a> <a href="#"> Branding</a></div>
                                 <div class="grid-det-item">
-                                    <a href="portfolio-single.html" class="ajax grid-det_link">Kent Brant Concept<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Kent Brant Concept<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -144,7 +144,7 @@
                                 <a href="images/folio/6.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
                                 <div class="grid-det_category"><a href="#">Design  </a> <a href="#"> Branding</a></div>
                                 <div class="grid-det-item">
-                                    <a href="portfolio-single.html" class="ajax grid-det_link">Corporate website<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Corporate website<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -158,7 +158,7 @@
                                 <a href="images/folio/7.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
                                 <div class="grid-det_category"><a href="#">Design  </a> <a href="#"> Branding</a></div>
                                 <div class="grid-det-item">
-                                    <a href="portfolio-single.html" class="ajax grid-det_link">Travel Agensy<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Travel Agensy<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -172,7 +172,7 @@
                                 <a href="images/folio/8.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
                                 <div class="grid-det_category"><a href="#">Design  </a> <a href="#"> Branding</a></div>
                                 <div class="grid-det-item">
-                                    <a href="portfolio-single.html" class="ajax grid-det_link">Sport  Agensy<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Sport  Agensy<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -186,7 +186,7 @@
                                 <a href="images/folio/9.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
                                 <div class="grid-det_category"><a href="#">Design  </a> <a href="#"> UI/UX</a></div>
                                 <div class="grid-det-item">
-                                    <a href="portfolio-single.html" class="ajax grid-det_link">Barbershop Website<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Barbershop Website<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -200,7 +200,7 @@
                                 <a href="images/folio/10.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
                                 <div class="grid-det_category"><a href="#">Design  </a> <a href="#"> Branding</a></div>
                                 <div class="grid-det-item">
-                                    <a href="portfolio-single.html" class="ajax grid-det_link">Online Shop Website<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Online Shop Website<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -214,7 +214,7 @@
                                 <a href="images/folio/17.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
                                 <div class="grid-det_category"><a href="#">Photography  </a> <a href="#"> Branding</a></div>
                                 <div class="grid-det-item">
-                                    <a href="portfolio-single.html" class="ajax grid-det_link">Photography Studio<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Photography Studio<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -228,7 +228,7 @@
                                 <a href="images/folio/18.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
                                 <div class="grid-det_category"><a href="#">Development</a> <a href="#"> Design </a></div>
                                 <div class="grid-det-item">
-                                    <a href="portfolio-single.html" class="ajax grid-det_link">Vintage Branding<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Vintage Branding<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>

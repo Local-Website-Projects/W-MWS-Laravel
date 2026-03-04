@@ -24,7 +24,7 @@
                                         <h1>Crafting Quality <br><span> Powering the</span> Global<br><span>Apparel Supply Chain.</span></h1>
                                         <h4>We bridge the gap between your creative designs and final delivery with an unyielding commitment to ethics and quality.</h4>
                                         <div class="clearfix"></div>
-                                        <a href="#" class="btn ajax  fl-btn color-bg"><span>Our portfolio</span></a>
+                                        <a href="{{route('portfolio')}}" class="btn ajax  fl-btn color-bg"><span>Our portfolio</span></a>
                                     </div>
                                 </div>
                                 <!-- swiper-slide end-->
@@ -35,7 +35,7 @@
                                         <h1>Your Premier <br> Partner <br/><span>In Bangladesh</span></h1>
                                         <h4>Providing end-to-end supply chain solutions from initial fabric innovation and tech-pack development to the final shipment.</h4>
                                         <div class="clearfix"></div>
-                                        <a href="#" class="btn ajax  fl-btn color-bg"><span>Contact Us</span></a>
+                                        <a href="{{route('contact')}}" class="btn ajax  fl-btn color-bg"><span>Contact Us</span></a>
                                     </div>
                                 </div>
                                 <!-- swiper-slide end-->
@@ -46,7 +46,7 @@
                                         <h1>Building A <br>Supply Chain <br> With <span>  A Conscience</span> </h1>
                                         <h4>We partner exclusively with BSCI, SEDEX, and LEED-certified facilities to ensure every piece meets the highest global standards.</h4>
                                         <div class="clearfix"></div>
-                                        <a href="#" class="btn  ajax  fl-btn color-bg"><span>View project</span></a>
+                                        <a href="{{route('sustainability')}}" class="btn  ajax  fl-btn color-bg"><span>Global Reach</span></a>
                                     </div>
                                 </div>
                                 <!-- swiper-slide end-->
@@ -57,7 +57,7 @@
                                         <h1>Where Your Vision <br> Features <br>Meets Technical  <span> Precision</span></h1>
                                         <h4>Our 5-step excellence roadmap ensures rapid price analysis, fast sampling, and rigorous monitoring for total peace of mind.</h4>
                                         <div class="clearfix"></div>
-                                        <a href="#" class="btn ajax  fl-btn color-bg"><span>About us</span></a>
+                                        <a href="{{route('about')}}" class="btn ajax  fl-btn color-bg"><span>About us</span></a>
                                     </div>
                                 </div>
                                 <!-- swiper-slide end-->
