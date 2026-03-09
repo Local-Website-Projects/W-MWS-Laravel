@@ -21,7 +21,7 @@
                                 <div class="swiper-slide">
                                     <div class="half-hero-wrap">
                                         <div class="hhw_header">Welcome to MWS</div>
-                                        <h1>Crafting Quality <br><span> Powering the</span> Global<br><span>Apparel Supply Chain.</span></h1>
+                                        <h1>Crafting Quality <br><span> Powering the</span> Global<br><span>Apparel Supply Chain</span></h1>
                                         <h4>We bridge the gap between your creative designs and final delivery with an unyielding commitment to ethics and quality.</h4>
                                         <div class="clearfix"></div>
                                         <a href="{{route('portfolio')}}" class="btn ajax  fl-btn color-bg"><span>Our portfolio</span></a>
@@ -32,7 +32,7 @@
                                 <div class="swiper-slide">
                                     <div class="half-hero-wrap">
                                         <div class="hhw_header">Welcome to MWS</div>
-                                        <h1>Your Premier <br> Partner <br/><span>In Bangladesh</span></h1>
+                                        <h1>Your Premium <br> Partner <br/><span>In Bangladesh</span></h1>
                                         <h4>Providing end-to-end supply chain solutions from initial fabric innovation and tech-pack development to the final shipment.</h4>
                                         <div class="clearfix"></div>
                                         <a href="{{route('contact')}}" class="btn ajax  fl-btn color-bg"><span>Contact Us</span></a>
@@ -55,7 +55,7 @@
                                     <div class="half-hero-wrap">
                                         <div class="hhw_header">Welcome to MWS</div>
                                         <h1>Where Your Vision <br> Features <br>Meets Technical  <span> Precision</span></h1>
-                                        <h4>Our 5-step excellence roadmap ensures rapid price analysis, fast sampling, and rigorous monitoring for total peace of mind.</h4>
+                                        <h4>Our 5-step excellence roadmap ensures rapid price analysis, fast sampling, and rigorous monitoring for complete confidence.</h4>
                                         <div class="clearfix"></div>
                                         <a href="{{route('about')}}" class="btn ajax  fl-btn color-bg"><span>About us</span></a>
                                     </div>
@@ -121,11 +121,11 @@
                     <div class="hsc hsc-next"><span><i class="fal fa-angle-right"></i></span></div>
                 </div>
                 <!-- slider-controls end-->
-                <a href="{{route('about')}}" class="ajax start-btn"><span> Start explore <i class="fal fa-long-arrow-right"></i></span></a>
+                <a href="{{route('about')}}" class="ajax start-btn"><span> Explore More <i class="fal fa-long-arrow-right"></i></span></a>
                 <div class="play-pause_slider hsc_pp auto_actslider"><i class="fas fa-play"></i></div>
             </div>
             <!-- hero-container end-->
-            <div class="hero-decor-numb"><span>40.7143528  </span><span>-74.0059731 </span> <a href="https://www.google.com.ua/maps/" target="_blank" class="hero-decor-numb-tooltip">Based In NewYork</a></div>
+            <div class="hero-decor-numb"><span>23.86940  </span><span>90.39226 </span> <a href="https://www.google.com.ua/maps/" target="_blank" class="hero-decor-numb-tooltip">Based In NewYork</a></div>
             <div class="hero-slider-wrap_pagination"></div>
             <div class="hero-scroll-down-notifer">
                 <div class="scroll-down-wrap ">

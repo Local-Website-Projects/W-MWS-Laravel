@@ -7,19 +7,19 @@
 @section('description', '')
 
 @section('content')
-    <div class="content full-height no-mob-hidden2">
+    <div class="content full-height no-mob-hidden2" data-pagetitle="contact">
         <div class="content-inner">
             <div class="content-front">
                 <div class="cf-inner">
                     <div class="contact-details-title fl-wrap">
-                        <h2>Contact Detais</h2>
+                        <h2>Contact Details</h2>
                     </div>
                     <div class="contact-details fl-wrap">
                         <ul>
                             <li><span>01. Mail :</span><a href="#" target="_blank">sales@mwsbd.net</a></li>
                             <li><span>02. Adress :</span><a href="#" target="_blank">Flat- 5A, 4th Floor, House 113, Road 17 ,<br/> Sector 14, Uttara 1230,
                                     Bangladesh</a></li>
-                            <li><span>03. Phone :</span><a href="#">+8801811009788</a></li>
+                            <li><span>03. Phone & Whatsapp :</span><a href="#">+8801811009788</a></li>
                         </ul>
                     </div>
                     <a href="#" class="btn fl-btn color-bg show_contact-form"><span>Say Hello</span></a>
@@ -53,7 +53,7 @@
             </div>
         </div>
         <div class="map-container">
-            <div id="map-single" class="map" data-latlog="[40.714 , -74.005]" data-popuptext="My Location in New York ."></div>
+            <div id="map-single" class="map" data-latlog="[23.8694 , 90.39226]" data-popuptext="My Location in New York ."></div>
         </div>
         <div class="main_social">
             <span class="main-social-title">Find on:</span>

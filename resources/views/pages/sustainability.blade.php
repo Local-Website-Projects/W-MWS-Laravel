@@ -7,7 +7,7 @@
 @section('description', '')
 
 @section('content')
-    <div class="content">
+    <div class="content" data-pagetitle="sustainability">
         <div class="page-scroll-nav psn_single">
             <!--content-nav_holder-->
             <div class="content-nav_holder">

@@ -359,7 +359,7 @@
                             <div class="tc-pagination"></div>
                         </div>
                         <!-- client-list -->
-                        <div class="fl-wrap client-list">
+                        {{--<div class="fl-wrap client-list">
                             <ul class="">
                                 <li><a href="#" target="_blank"><img src="images/clients/4.png" alt=""></a></li>
                                 <li><a href="#" target="_blank"><img src="images/clients/2.png" alt=""></a></li>
@@ -367,7 +367,7 @@
                                 <li><a href="#" target="_blank"><img src="images/clients/2.png" alt=""></a></li>
                             </ul>
                             <!-- client-list end-->
-                        </div>
+                        </div>--}}
                     </div>
                     <div class="section-number"> <span>0</span>3. </div>
                 </section>

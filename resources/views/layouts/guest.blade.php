@@ -33,7 +33,7 @@
     @include('components.theme.leftHeader')
 
     <!-- share button-->
-    <div class="share-btn showshare color-bg"><span>Share <i class="fal fa-plus"></i></span></div>
+    <div class="share-btn showshare color-bg"><span><i class="fal fa-plus"></i></span></div>
     <!-- share button end-->
 
     <!-- right header-->
