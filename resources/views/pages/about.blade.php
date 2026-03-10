@@ -7,6 +7,26 @@
 @section('description', '')
 
 @section('content')
+    <style>
+        .num.plus::after {
+            content: "+";
+            display: inline-block;
+            margin-left: 2px; /* Adds a tiny bit of breathing room */
+            vertical-align: middle; /* Aligns it nicely with the numbers */
+        }
+        .aql::after {
+            content: "/2.5"; /* This adds the static part */
+            font-weight: bold;
+            opacity: 1; /* Optional: makes the second number slightly subtle */
+            margin-left: 2px;
+        }
+        .num.percent-sign::after {
+            content: "%";
+            margin-left: 1px;
+            font-weight: inherit; /* Matches the boldness of the number */
+        }
+    </style>
+
     <!-- content-->
     <div class="content"  data-pagetitle="about us">
         <div class="page-scroll-nav">
@@ -80,7 +100,11 @@
                 </div>
                 <!--fixed-column-wrap_title end-->
                 <div class="fixed-column-dec"></div>
-                <div class="scroll-notifer">Scroll Down  </div>
+                <div class="scroll-notifer">
+                    <div class="scroll-button">
+                        <button id="scrollBtn" class="mouse-icon"></button>
+                    </div>
+                </div>
                 <div class="section-counter">
                     <div class="sc_current"><span>01</span></div>
                     <div class="sc_total"></div>
@@ -119,19 +143,30 @@
                                             <div class="inline-facts">
                                                 <div class="milestone-counter">
                                                     <div class="stats animaper">
-                                                        <div class="num" data-content="0" data-num="20">0</div>
+                                                        <div class="num plus" data-content="0" data-num="20">0</div>
                                                     </div>
                                                 </div>
                                                 <h6>Vetted Partner Factories</h6>
                                             </div>
                                         </div>
+                                        <div class="inline-facts-wrap">
+                                            <div class="inline-facts">
+                                                <div class="milestone-counter">
+                                                    <div class="stats animaper">
+                                                        <div class="num plus" data-content="0" data-num="5">0</div>
+                                                    </div>
+                                                </div>
+                                                <h6>Global Export Destinations</h6>
+                                            </div>
+                                        </div>
+
                                         <!-- inline-facts end -->
                                         <!-- inline-facts  -->
                                         <div class="inline-facts-wrap">
                                             <div class="inline-facts">
                                                 <div class="milestone-counter">
                                                     <div class="stats animaper">
-                                                        <div class="num" data-content="0" data-num="100">0</div>
+                                                        <div class="num percent-sign" data-content="0" data-num="100">0</div>
                                                     </div>
                                                 </div>
                                                 <h6>Socially Compliant</h6>
@@ -143,7 +178,7 @@
                                             <div class="inline-facts">
                                                 <div class="milestone-counter">
                                                     <div class="stats animaper">
-                                                        <div class="num" data-content="0" data-num="1.5">0</div>
+                                                        <div class="num aql" data-content="0" data-num="1.5">0</div>
                                                     </div>
                                                 </div>
                                                 <h6>AQL</h6>
@@ -151,16 +186,7 @@
                                         </div>
                                         <!-- inline-facts end -->
 
-                                        <div class="inline-facts-wrap">
-                                            <div class="inline-facts">
-                                                <div class="milestone-counter">
-                                                    <div class="stats animaper">
-                                                        <div class="num" data-content="0" data-num="5">0</div>
-                                                    </div>
-                                                </div>
-                                                <h6>Global Export Destinations</h6>
-                                            </div>
-                                        </div>
+
                                     </div>
                                     <a href="{{route('portfolio')}}" class="btn ajax  color-bg  fl-btn"><span>Our Portfolio</span></a>
                                 </div>
@@ -292,7 +318,68 @@
                             <h3>Our 5-Step Excellence Roadmap</h3>
                             <p>A Proven Framework for Turning Concepts into Containers with Speed and Technical Precision</p>
                         </div>
-                        <div class="testimonilas-carousel-wrap fl-wrap">
+                        <div class="timeline">
+                            <div class="timeline-line"></div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-number">1</div>
+                                <div class="timeline-content">
+                                    <h2>Inquiry & Costing (24 Hours)</h2>
+                                    <p>We prioritize speed to keep your business moving by providing a rapid price analysis within 24 hours. Our team performs a strategic factory selection from our vetted network to ensure your project aligns with the best cost-to-quality ratio.</p>
+                                </div>
+                                <div class="timeline-image">
+                                    <img src="{{asset('images/steps/Inquiry-and-costing-24-hours.jpg')}}" alt="steps"/>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-number">2</div>
+                                <div class="timeline-content">
+                                    <h2>Sampling & PD (7 Days)</h2>
+                                    <p>We transform your vision into physical reality through rapid prototyping and tech-pack development. Within just 7 days, we deliver high-quality physical prototypes and lab dips, ensuring your design is technically precise before mass production begins.</p>
+                                </div>
+                                <div class="timeline-image">
+                                    <img src="{{asset('images/steps/factory-sampling-and-pd.jpg')}}" alt="steps"/>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-number">3</div>
+                                <div class="timeline-content">
+                                    <h2>Order Execution (60 Days)</h2>
+                                    <p>Once production starts, we maintain a strict 60-day timeline to ensure your collection moves from concept to container in record time. This phase involves rigorous monitoring of every manufacturing stage, including yarn sourcing, knitting, and dyeing.</p>
+                                </div>
+                                <div class="timeline-image">
+                                    <img src="{{asset('images/steps/Order-execution.jpg')}}" alt="steps"/>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-number">4</div>
+                                <div class="timeline-content">
+                                    <h2>Quality Gate (100%)</h2>
+                                    <p>Our "3-Gate" defense protocol provides total peace of mind through a zero-defect supply chain. We conduct multi-stage inline inspections and a final statistical audit to AQL 1.5/2.5 standards to verify that every item is retail-ready.</p>
+                                </div>
+                                <div class="timeline-image">
+                                    <img src="{{asset('images/steps/Quality-gate.jpg')}}" alt="steps"/>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-number">5</div>
+                                <div class="timeline-content">
+                                    <h2>Logistics (100%)</h2>
+                                    <p>We guarantee a seamless export experience by managing all documentation and complex logistics requirements. Our commitment to 100% on-time shipments ensures reliable global delivery to your warehouses across the UK, EU, USA, and beyond.</p>
+                                </div>
+                                <div class="timeline-image">
+                                    <img src="{{asset('images/steps/Logistics.jpg')}}" alt="steps"/>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        {{--<div class="testimonilas-carousel-wrap fl-wrap">
                             <div class="tc-button tc-button-next"><i class="fal fa-angle-right"></i></div>
                             <div class="tc-button tc-button-prev"><i class="fal fa-angle-left"></i></div>
                             <div class="testimonilas-carousel">
@@ -357,7 +444,7 @@
                                 </div>
                             </div>
                             <div class="tc-pagination"></div>
-                        </div>
+                        </div>--}}
                         <!-- client-list -->
                         {{--<div class="fl-wrap client-list">
                             <ul class="">
@@ -394,4 +481,16 @@
         <div class="share-container fl-wrap  isShare"></div>
     </div>
     <!-- share-wrapper  end -->
+
+
+    <script>
+        document.getElementById('scrollBtn').addEventListener('click', function() {
+            // Option B: Scroll down by the height of the current window (100vh)
+            window.scrollBy({
+                top: window.innerHeight,
+                left: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 @endsection

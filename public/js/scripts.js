@@ -603,8 +603,27 @@ function initZonar() {
     lightGalleryInit();
     //   appear------------------
     $(".stats").appear(function () {
-        $(".num").countTo();
+        $(".num").each(function() {
+            var $this = $(this);
+            var targetNum = parseFloat($this.attr("data-num"));
+
+            // Check if the number has a decimal (e.g., 1.5 vs 20)
+            var isDecimal = targetNum % 1 !== 0;
+
+            $this.countTo({
+                from: 0,
+                to: targetNum,
+                speed: 2000,
+                refreshInterval: 50,
+                decimals: isDecimal ? 1 : 0, // 1 decimal if needed, otherwise 0
+                formatter: function (value, options) {
+                    return value.toFixed(options.decimals);
+                }
+            });
+        });
     });
+
+
     $(".skillbar-box").appear(function () {
         $(this).find("div.skillbar-bg").each(function () {
             $(this).find(".custom-skillbar").delay(600).animate({

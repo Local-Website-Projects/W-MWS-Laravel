@@ -62,7 +62,11 @@
                 <!--fixed-column-wrap_title end-->
                 <div class="fixed-column-dec"></div>
                 <div class="fixed-column-linedec"></div>
-                <div class="scroll-notifer">Scroll Down  </div>
+                <div class="scroll-notifer">
+                    <div class="scroll-button">
+                        <button id="scrollBtn" class="mouse-icon"></button>
+                    </div>
+                </div>
             </div>
             <!--fixed-column-wrap-content end-->
         </div>
@@ -166,4 +170,15 @@
         </div>
         <i class="far fa-angle-down"></i>
     </div>
+
+    <script>
+        document.getElementById('scrollBtn').addEventListener('click', function() {
+            // Option B: Scroll down by the height of the current window (100vh)
+            window.scrollBy({
+                top: window.innerHeight,
+                left: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 @endsection

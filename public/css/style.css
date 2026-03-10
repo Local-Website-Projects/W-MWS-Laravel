@@ -3480,7 +3480,7 @@ section.parallax-section .bg {
 }
 .scroll-notifer {
 	position:absolute;
-	right:280px;
+	right:380px;
 	top:150px;
     color: #fff;
     letter-spacing: 10px;
@@ -5478,4 +5478,188 @@ section.parallax-section .bg {
 		-webkit-background-size: cover;
 		background-position: center;
 	}
+}
+
+.scroll-button {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    color: #fff;
+}
+
+/* Creating a small mouse-like icon */
+.mouse-icon {
+    width: 30px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    margin-top: 8px;
+    position: relative;
+    background: transparent;
+}
+
+/* The animated wheel inside the mouse */
+.mouse-icon::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 6px;
+    border-radius: 50%;
+    animation: scroll-anim 1.5s infinite;
+}
+
+@keyframes scroll-anim {
+    0% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    100% { opacity: 0; transform: translateX(-50%) translateY(15px); }
+}
+
+/*
+new timeline design*/
+
+.timeline {
+    position: relative;
+    margin: 40px 0; /* Reducido el margen vertical para móvil */
+}
+
+.timeline-line {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #e0e0e0;
+    background: linear-gradient(45deg, transparent, black, transparent);
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    display: flex;
+    flex-direction: column; /* Apilamos los elementos en móvil */
+    margin-bottom: 60px; /* Reducido el margen inferior para móvil */
+    position: relative;
+}
+
+.timeline-number {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    z-index: 2;
+    margin-right: 20px; /* Reducido el margen derecho para móvil */
+    flex-shrink: 0;
+    transform: unset; /* Eliminamos la transformación para móvil */
+}
+
+.timeline-content {
+    flex: 1;
+    margin-left: 60px; /* Añadimos margen izquierdo para alinear con la línea */
+    margin-top: -40px; /* Ajustamos el margen superior para superponerse */
+    padding-top: 10px;
+}
+
+.timeline-content h2 {
+    font-size: 20px; /* Reducido el tamaño de la fuente para móvil */
+    margin-bottom: 10px; /* Reducido el margen inferior para móvil */
+    color: #333;
+    font-weight: 600;
+}
+
+.timeline-content p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 15px; /* Reducido el margen inferior para móvil */
+    max-width: 100%; /* El texto ocupa todo el ancho disponible en móvil */
+}
+
+.timeline-image {
+    width: calc(100% - 60px); /* Ocupa el ancho restante */
+    height: 180px; /* Reducida la altura para móvil */
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60px; /* Alineado con el contenido */
+    margin-top: 20px; /* Añadido margen superior */
+    flex-shrink: 0;
+}
+
+.timeline-image img {
+    max-width: 100%; /* La imagen se ajusta al contenedor */
+    max-height: 100%;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    border-radius: 20px;
+}
+
+/* Estilos para desktop (a partir de 769px de ancho) */
+@media (min-width: 769px) {
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 1200px;
+        padding: 40px 20px;
+    }
+
+    .timeline {
+        margin: 60px 0;
+    }
+
+    .timeline-line {
+        left: 40px;
+        transform: translateX(-50%);
+    }
+
+    .timeline-item {
+        flex-direction: row; /* Volvemos a la disposición horizontal en desktop */
+        margin-bottom: 80px;
+    }
+
+    .timeline-number {
+        margin-right: 40px;
+        width: 40px;
+        height: 40px;
+        transform: translateX(20px); /* Volvemos a la transformación original */
+    }
+
+    .timeline-content {
+        margin-left: 0; /* Removemos el margen izquierdo */
+        margin-top: 0; /* Removemos el margen superior */
+        padding-top: 0;
+        text-align: start;
+    }
+
+    .timeline-content h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .timeline-content p {
+        font-size: 16px;
+        margin-bottom: 20px;
+        max-width: 500px;
+    }
+
+    .timeline-image {
+        width: 300px;
+        height: 100%;
+        margin-left: 40px;
+        margin-top: 0; /* Removemos el margen superior */
+    }
 }

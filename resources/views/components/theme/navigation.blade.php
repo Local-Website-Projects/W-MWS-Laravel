@@ -4,11 +4,21 @@
             <!-- nav -->
             <nav class="nav-inner" id="menu">
                 <ul>
-                    <li><a href="{{route('home')}}" class="act-link">Home</a></li>
-                    <li><a href="{{route('about')}}" class="ajax">About Us</a></li>
-                    <li><a href="{{route('sustainability')}}">Sustainability & Global Reach</a></li>
-                    <li><a href="{{route('portfolio')}}">Sourcing Portfolio</a></li>
-                    <li><a href="{{route('contact')}}" class="ajax">Contacts</a></li>
+                    <li>
+                        <a href="{{ route('home') }}" class="{{ Route::is('home') ? 'act-link' : '' }}">Home</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('about') }}" class="{{ Route::is('about') ? 'act-link' : '' }}">About Us</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('sustainability') }}" class="{{ Route::is('sustainability') ? 'act-link' : '' }}">Sustainability & Global Reach</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('portfolio') }}" class="{{ Route::is('portfolio') ? 'act-link' : '' }}">Sourcing Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('contact') }}" class="{{ Route::is('contact') ? 'act-link' : '' }}">Contacts</a>
+                    </li>
                 </ul>
             </nav>
             <!-- nav end-->
