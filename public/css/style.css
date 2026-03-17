@@ -685,11 +685,11 @@ blockquote p {
 }
 /*------ btn ------------------------------------------------*/
 .btn {
-	padding:15px 38px;
+	padding:10px 20px;
 	position:relative;
 	color:#fff;
 	text-transform:uppercase;
-	font-size:12px;
+	font-size:11px;
 	letter-spacing:2px;
 	font-weight:800;
 	background:#3C3C3C;
@@ -1103,7 +1103,7 @@ nav.nav-inner {
 }
 .hero-slider_control-wrap {
 	position:absolute;
-	left:30%;
+    right: 25%;
 	bottom:18px;
 	z-index:20;
 }
@@ -1484,7 +1484,7 @@ nav.nav-inner {
 }
 .hero-corner-dec  {
 	border-right:1px solid rgba(255,255,255,0.2);
-	border-bottom:1px solid rgba(255,255,255,0.2);
+	/*border-bottom:1px solid rgba(255,255,255,0.2);*/
 	z-index:4;
 	position:absolute;
 	left:200px;

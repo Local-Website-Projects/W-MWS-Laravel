@@ -5,7 +5,7 @@
     right: 85px;
     width: 60px;
     height: 60px;
-    background: #f57500;
+    background: #ff8c00;
     color: white;
     border-radius: 50%;
     border: none;
@@ -37,7 +37,7 @@
 
 /* Header */
 .mws-chat-header {
-    background: #f57500;
+    background: #ff8c00;
     color: white;
     padding: 15px;
     display: flex;
@@ -90,7 +90,7 @@
     font-size: 13px;
 }
 .mws-chat-footer button {
-    background: #f57500;
+    background: #ff8c00;
     color: white;
     border: none;
     padding: 8px 15px;
@@ -122,7 +122,7 @@
 
 /* Styling for AI */
 .mws-incoming .mws-bubble {
-    background: #f57500;
+    background: #ff8c00;
     color: white;
     border-radius: 15px 15px 15px 0px;
 }

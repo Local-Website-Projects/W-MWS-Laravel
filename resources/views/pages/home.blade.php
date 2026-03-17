@@ -110,8 +110,9 @@
                                 </span>
                 </div>
                 <div class="clone-counter">
-                    <p style="position: absolute; bottom: 180px; letter-spacing: 3px; color: #fff">Scan me:</p>
-                    <img src="{{asset('images/qr.png')}}" height="150px" width="150px" alt="qrcode"/>
+                    {{--<p style="position: absolute; bottom: 180px; letter-spacing: 3px; color: #fff">Scan me:</p>
+                    <img src="{{asset('images/qr.png')}}" height="150px" width="150px" alt="qrcode"/>--}}
+                    <div class="current">01</div>
                 </div>
                 <div class="swiper-counter hs_counter">
                     <div class="current">01</div>
@@ -126,7 +127,7 @@
                 <div class="play-pause_slider hsc_pp auto_actslider"><i class="fas fa-play"></i></div>
             </div>
             <!-- hero-container end-->
-            <div class="hero-decor-numb"><span>23.86940  </span><span>90.39226 </span> <a href="https://www.google.com.ua/maps/" target="_blank" class="hero-decor-numb-tooltip">Based In NewYork</a></div>
+            <div class="hero-decor-numb"><span>23.86940  </span><span>90.39226 </span> <a href="https://maps.app.goo.gl/DKEhUXWe3qDSRthX6" target="_blank" class="hero-decor-numb-tooltip">Based In Dhaka</a></div>
             <div class="hero-slider-wrap_pagination"></div>
             <div class="hero-scroll-down-notifer">
                 <div class="scroll-down-wrap ">
