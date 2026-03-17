@@ -78,6 +78,12 @@
                             <!-- swiper-slide end-->
                             <!-- swiper-slide-->
                             <div class="swiper-slide">
+                                <div class="bg"  data-bg="images/bg/13.jpg" data-swiper-parallax="20%"></div>
+                                <div class="overlay"></div>
+                            </div>
+                            <!-- swiper-slide end-->
+                            <!-- swiper-slide-->
+                            <div class="swiper-slide">
                                 <div class="bg"  data-bg="images/bg/7.jpg" data-swiper-parallax="20%"></div>
                                 <div class="overlay"></div>
                             </div>
@@ -85,12 +91,6 @@
                             <!-- swiper-slide-->
                             <div class="swiper-slide">
                                 <div class="bg"  data-bg="images/bg/8.jpg" data-swiper-parallax="20%"></div>
-                                <div class="overlay"></div>
-                            </div>
-                            <!-- swiper-slide end-->
-                            <!-- swiper-slide-->
-                            <div class="swiper-slide">
-                                <div class="bg"  data-bg="images/bg/13.jpg" data-swiper-parallax="20%"></div>
                                 <div class="overlay"></div>
                             </div>
                             <!-- swiper-slide end-->
@@ -110,7 +110,8 @@
                                 </span>
                 </div>
                 <div class="clone-counter">
-                    <div class="current">01</div>
+                    <p style="position: absolute; bottom: 180px; letter-spacing: 3px; color: #fff">Scan me:</p>
+                    <img src="{{asset('images/qr.png')}}" height="150px" width="150px" alt="qrcode"/>
                 </div>
                 <div class="swiper-counter hs_counter">
                     <div class="current">01</div>

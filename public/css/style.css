@@ -390,8 +390,8 @@ blockquote p {
 	left:26px;
 }
 .logo-holder img {
-	width:auto;
-	height:44px;
+    height: 32px;
+    margin-top: 5px;
 }
 .header-contacts {
 	float:right;
@@ -1127,7 +1127,7 @@ nav.nav-inner {
 	font-size:14px;
 	margin-right:4px;
 	cursor:pointer;
-	box-shadow: 0px 0px 0px 2px rgba(255,255,255,0.1);
+	/*box-shadow: 0px 0px 0px 2px rgba(255,255,255,0.1);*/
 	transition: all 0.2s ease-in-out;
 	transform:scale(1.0);
 }
@@ -1278,7 +1278,7 @@ nav.nav-inner {
 }
 .clone-counter {
 	position:absolute;
-	left:70px;
+	left:95px;
 	bottom:-20px;
 	z-index:2;
 	font-family: 'Oswald', sans-serif;
@@ -4925,7 +4925,7 @@ section.parallax-section .bg {
 .header-contacts {
 	right:200px;
 }
-.left-header  , .hc_dec_color , .hero-scroll-down-notifer , .element , .share-btn:before , .share-btn span i , .fs-pg-idicator_wrap .progress-indicator:after, .fs-pg-idicator_wrap .slider-progress-bar:after , .fsc-holder:before , .fsc-holder:after , .fw-carousel-counter:after , .clone-counter , .hero_promo-title p , .hero_promo-title:after , .hero_promo-title:before , .hero_promo-wrap:before , .hero_promo-button .overlay , .hero_promo-button .bg , .hero-decor-numb.hdn2 {
+.left-header  , .hc_dec_color , .hero-scroll-down-notifer , .element , .share-btn:before , .share-btn span i , .fs-pg-idicator_wrap .progress-indicator:after, .fs-pg-idicator_wrap .slider-progress-bar:after , .fsc-holder:before , .fsc-holder:after , .fw-carousel-counter:after , .hero_promo-title p , .hero_promo-title:after , .hero_promo-title:before , .hero_promo-wrap:before , .hero_promo-button .overlay , .hero_promo-button .bg , .hero-decor-numb.hdn2 {
 	display:none;
 }
 .main-header {
@@ -5118,6 +5118,11 @@ section.parallax-section .bg {
 .fix-pr-det-dec , .fix-pr-det-dec2 , .closedet_style  , .show-details.sd_btn2 , .hero-decor-numb , .hero-corner-dec2 , .hero-conatiner .slider-progress-bar , .contacts-btn , .hc_dec , .hsc_pp  , .hero-corner-dec , .hero_entry:before  , .hero-facts-wrap , .hero_entry:after , .fhhw:before , .fhhw:after , .fcc_column  , .hor-scroll-idicator , .fixed-bottom-panel.fs-fix-bom-panel.fbp_single-car , .next-project-swiper-link{
 	display:none;
 }
+
+    .clone-counter{
+        bottom: 50px;
+        left: 30px !important;
+    }
 .fix-pr-det {
 	float:left;
     position: relative;
@@ -5608,9 +5613,6 @@ new timeline design*/
 
 /* Estilos para desktop (a partir de 769px de ancho) */
 @media (min-width: 769px) {
-    body {
-        padding: 20px;
-    }
 
     .container {
         max-width: 1200px;

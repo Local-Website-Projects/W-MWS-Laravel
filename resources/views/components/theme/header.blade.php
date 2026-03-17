@@ -13,7 +13,7 @@
     <!-- header-contacts-->
     <div class="header-contacts">
         <ul>
-            <li><span>01. Call & Whatsapp </span> <a href="tel:+8801811009788">+880 1811 009 788</a></li>
+            <li><span>01. Call & Whatsapp </span> <a href="https://wa.me/8801811009788" target="_blank">+880 1811 009 788</a></li>
             <li><span>02. Email </span> <a href="mailto:sales@mwsbd.net">sales@mwsbd.net</a></li>
         </ul>
         <a href="{{route('contact')}}" class="ajax contacts-btn">Get in touch</a>
