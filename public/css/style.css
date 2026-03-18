@@ -1103,7 +1103,7 @@ nav.nav-inner {
 }
 .hero-slider_control-wrap {
 	position:absolute;
-    right: 25%;
+    right: 30%;
 	bottom:18px;
 	z-index:20;
 }
@@ -4897,7 +4897,7 @@ section.parallax-section .bg {
     bottom: 250px;
 }
 }
-@media only screen and (max-width: 1260px) {
+@media only screen and (max-width: 1360px) {
 .header-contacts ul{
 	display:none;
 }
@@ -5586,7 +5586,7 @@ new timeline design*/
 
 .timeline-content p {
     color: #666;
-    font-size: 16px;
+    font-size: 12px;
     margin-bottom: 15px; /* Reducido el margen inferior para móvil */
     max-width: 100%; /* El texto ocupa todo el ancho disponible en móvil */
 }
@@ -5653,7 +5653,7 @@ new timeline design*/
     }
 
     .timeline-content p {
-        font-size: 16px;
+        font-size: 12px;
         margin-bottom: 20px;
         max-width: 500px;
     }

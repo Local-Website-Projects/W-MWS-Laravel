@@ -36,7 +36,7 @@
                     <li><a class="scroll-link fbgs" href="#sec2" data-bgtext="02"><span>Services</span></a></li>
                     <li><a class="scroll-link fbgs" href="#sec3" data-bgtext="03"><span>Roadmap</span></a></li>
                 </ul>
-                <div class="psn_button act-filter"><i class="fal fa-sort"></i> FIlter </div>
+                <div class="psn_button act-filter"><i class="fal fa-sort"></i> Menu </div>
             </nav>
         </div>
         <!-- hero-section-dec-->
@@ -312,7 +312,7 @@
                 <!--section end-->
                 <div class="section-separator fl-wrap"><span></span></div>
                 <!--section  -->
-                <section class="scroll_sec" id="sec3">
+                <section class="scroll_sec" style="padding: 80px 0 0 0;" id="sec3">
                     <div class="container">
                         <div class="section-title">
                             <h3>Our 5-Step Excellence Roadmap</h3>

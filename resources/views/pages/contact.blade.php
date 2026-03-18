@@ -23,7 +23,9 @@
                         </ul>
                     </div>
                     <a href="#" class="btn fl-btn color-bg show_contact-form"><span>Say Hello</span></a>
-                    <div class="aside-show_cf show_contact-form"><i class="fal fa-envelope"></i></div>
+                    <div class="aside-show_cf show_contact-form"><i class="fal fa-envelope"></i>
+                        <img src="{{asset('images/qr.png')}}" alt="QR-Code" style="width: 100px;height: auto;position: inherit;bottom: -152px;right: -40px;"/>
+                    </div>
                 </div>
             </div>
             <div class="content-back">
