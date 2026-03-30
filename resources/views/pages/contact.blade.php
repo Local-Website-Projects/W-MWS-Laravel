@@ -16,7 +16,7 @@
                     </div>
                     <div class="contact-details fl-wrap">
                         <ul>
-                            <li><span>01. Mail :</span><a href="#" target="_blank">sales@mwsbd.net</a></li>
+                            <li><span>01. Mail :</span><a href="mailto:info@manywears.com" target="_blank">info@manywears.com</a></li>
                             <li><span>02. Adress :</span><a href="https://maps.app.goo.gl/DKEhUXWe3qDSRthX6" target="_blank">Flat- 5A, 4th Floor, House 113, Road 17 ,<br/> Sector 14, Uttara 1230,
                                     Bangladesh</a></li>
                             <li><span>03. Phone & Whatsapp :</span><a href="#">+8801811009788</a></li>
