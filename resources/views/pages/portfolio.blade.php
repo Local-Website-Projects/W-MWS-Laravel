@@ -17,7 +17,9 @@
                     <a href="#" class="gallery-filter" data-filter=".branding">Denim</a>
                     <a href="#" class="gallery-filter" data-filter=".uides">Sweater</a>
                     <a href="#" class="gallery-filter" data-filter=".branding">Outerwear</a>
-                    <a href="#" class="gallery-filter" data-filter=".web">Bags</a>
+                    <a href="#" class="gallery-filter" data-filter=".uides">Workwear</a>
+                    <a href="#" class="gallery-filter" data-filter=".photography">Home Textiles</a>
+                    <a href="#" class="gallery-filter" data-filter=".web">Accessories</a>
                 </div>
                 <div class="psn_button act-filter"><i class="fal fa-sort"></i> FIlter </div>
             </div>

@@ -25,6 +25,167 @@
             margin-left: 1px;
             font-weight: inherit; /* Matches the boldness of the number */
         }
+
+        .sociales {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            #timeline {
+                width: 500px;
+                height: 600px;
+                overflow: hidden;
+                margin: 40px auto;
+                position: relative;
+                background: url('https://www.csslab.cl/ejemplos/timelinr/latest/images/dot.gif') 3px top repeat-y;
+            }
+
+            #dates {
+                width: 100px;
+                height: 600px;
+                overflow: hidden;
+                float: left;
+            }
+
+            #datesScroller,
+            #issuesScroller {
+                position: relative;
+                margin: 0;
+                padding: 0;
+                transition: transform 0.5s ease-in-out;
+            }
+
+            #dates li {
+                list-style: none;
+                width: 100px;
+                height: 100px;
+                line-height: 100px;
+                font-size: 24px;
+                padding-left: 10px;
+                background: url('https://www.csslab.cl/ejemplos/timelinr/latest/images/biggerdot.png') left center no-repeat;
+            }
+
+            #dates a {
+                line-height: 38px;
+                padding-bottom: 10px;
+            }
+
+            #dates .selected {
+                font-size: 38px;
+                color: #ff8c00;
+            }
+
+            #issues {
+                width: 400px;
+                height: 600px;
+                overflow: hidden;
+                float: left;
+            }
+
+            /* Each issue is 600px tall; we scroll by translating the inner scroller */
+            #issues li {
+                max-width: 300px;
+                /* width: 400px; */
+                height: 600px;
+                list-style: none;
+                text-align: center;
+                /* add */
+
+            }
+
+            #issues li.selected img {
+                -webkit-transform: scale(1.1, 1.1);
+                -moz-transform: scale(1.1, 1.1);
+                -o-transform: scale(1.1, 1.1);
+                -ms-transform: scale(1.1, 1.1);
+                transform: scale(1.1, 1.1);
+            }
+
+            #issues li img {
+                /* float: left; */
+                width: 200px;
+                /* add */
+                margin: 10px 30px 10px 50px;
+                -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)";
+                /* IE 8 */
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF, endColorstr=#00FFFFFF);
+                /* IE 6 & 7 */
+                zoom: 1;
+                -webkit-transition: all 2s ease-in-out;
+                -moz-transition: all 2s ease-in-out;
+                -o-transition: all 2s ease-in-out;
+                -ms-transition: all 2s ease-in-out;
+                transition: all 2s ease-in-out;
+                -webkit-transform: scale(0.7, 0.7);
+                -moz-transform: scale(0.7, 0.7);
+                -o-transform: scale(0.7, 0.7);
+                -ms-transform: scale(0.7, 0.7);
+                transform: scale(0.7, 0.7);
+            }
+
+            #issues li h1 {
+                color: #ff8c00;
+                font-size: 38px;
+                text-align: center;
+                /* text-shadow: #000 1px 1px 2px; */
+                font-weight: bold;
+            }
+
+            #issues li p {
+                font-size: 14px;
+                margin: 10px 20px;
+                font-weight: 500;
+                line-height: 22px;
+            }
+
+            #grad_top,
+            #grad_bottom {
+                width: 500px;
+                height: 80px;
+                position: absolute;
+            }
+
+            #grad_top {
+                top: 0;
+            }
+
+            #grad_bottom {
+                bottom: 0;
+            }
+
+            #next,
+            #prev {
+                position: absolute;
+                left: 45%;
+                /* left: 55%; */
+                font-size: 70px;
+                width: 38px;
+                height: 22px;
+                background-position: 0 -44px;
+                background-repeat: no-repeat;
+                text-indent: -9999px;
+                overflow: hidden;
+            }
+
+            #next:hover,
+            #prev:hover {
+                background-position: 0 0;
+            }
+
+            #next {
+                bottom: 0;
+                background-image: url('https://www.csslab.cl/ejemplos/timelinr/latest/images/next_v.png');
+            }
+
+            #prev {
+                top: 0;
+                background-image: url('https://www.csslab.cl/ejemplos/timelinr/latest/images/prev_v.png');
+            }
+
+            #next.disabled,
+            #prev.disabled {
+                opacity: 0.2;
+            }
     </style>
 
     <!-- content-->
@@ -318,133 +479,53 @@
                             <h3>Our 5-Step Excellence Roadmap</h3>
                             <p>A Proven Framework for Turning Concepts into Containers with Speed and Technical Precision</p>
                         </div>
-                        <div class="timeline">
-                            <div class="timeline-line"></div>
-
-                            <div class="timeline-item">
-                                <div class="timeline-number">1</div>
-                                <div class="timeline-content">
-                                    <h2>Inquiry & Costing (24 Hours)</h2>
-                                    <p>We prioritize speed to keep your business moving by providing a rapid price analysis within 24 hours. Our team performs a strategic factory selection from our vetted network to ensure your project aligns with the best cost-to-quality ratio.</p>
-                                </div>
-                                <div class="timeline-image">
-                                    <img src="{{asset('images/steps/Inquiry-and-costing-24-hours.jpg')}}" alt="steps"/>
-                                </div>
+                        <div id="timeline">
+                            <div id="dates">
+                                <ul id="datesScroller">
+                                    <li><a href="#step1" class="selected">1</a></li>
+                                    <li><a href="#step2">2</a></li>
+                                    <li><a href="#step3">3</a></li>
+                                    <li><a href="#step4">4</a></li>
+                                    <li><a href="#step5">5</a></li>
+                                </ul>
                             </div>
-
-                            <div class="timeline-item">
-                                <div class="timeline-number">2</div>
-                                <div class="timeline-content">
-                                    <h2>Sampling & PD (7 Days)</h2>
-                                    <p>We transform your vision into physical reality through rapid prototyping and tech-pack development. Within just 7 days, we deliver high-quality physical prototypes and lab dips, ensuring your design is technically precise before mass production begins.</p>
-                                </div>
-                                <div class="timeline-image">
-                                    <img src="{{asset('images/steps/factory-sampling-and-pd.jpg')}}" alt="steps"/>
-                                </div>
+                
+                            <div id="issues">
+                                <ul id="issuesScroller">
+                                    <li id="step1" class="selected">
+                                        <img src="{{ asset('images/steps/Inquiry-and-costing-24-hours.jpg') }}" />
+                                        <h1>Inquiry &amp; Costing (24 Hours)</h1>
+                                        <p>We prioritize speed to keep your business moving by providing a rapid price analysis within 24 hours. Our team performs a strategic factory selection from our vetted network to ensure your project aligns with the best cost-to-quality ratio.</p>
+                                    </li>
+                                    <li id="step2">
+                                        <img src="{{ asset('images/steps/factory-sampling-and-pd.jpg') }}" />
+                                        <h1>Sampling &amp; PD (7 Days)</h1>
+                                        <p>We transform your vision into physical reality through rapid prototyping and tech-pack development. Within just 7 days, we deliver high-quality physical prototypes and lab dips, ensuring your design is technically precise before mass production begins.</p>
+                                    </li>
+                                    <li id="step3">
+                                        <img src="{{ asset('images/steps/Order-execution.jpg') }}" />
+                                        <h1>Order Execution (60 Days)</h1>
+                                        <p>Once production starts, we maintain a strict 60-day timeline to ensure your collection moves from concept to container in record time. This phase involves rigorous monitoring of every manufacturing stage, including yarn sourcing, knitting, and dyeing.</p>
+                                    </li>
+                                    <li id="step4">
+                                        <img src="{{ asset('images/steps/Quality-gate.jpg') }}" />
+                                        <h1>Quality Gate (100%)</h1>
+                                        <p>Our &quot;3-Gate&quot; defense protocol provides total peace of mind through a zero-defect supply chain. We conduct multi-stage inline inspections and a final statistical audit to AQL 1.5/2.5 standards to verify that every item is retail-ready.</p>
+                                    </li>
+                                    <li id="step5">
+                                        <img src="{{ asset('images/steps/Logistics.jpg') }}" />
+                                        <h1>Logistics (100%)</h1>
+                                        <p>We guarantee a seamless export experience by managing all documentation and complex logistics requirements. Our commitment to 100% on-time shipments ensures reliable global delivery to your warehouses across the UK, EU, USA, and beyond.</p>
+                                    </li>
+                                </ul>
                             </div>
-
-                            <div class="timeline-item">
-                                <div class="timeline-number">3</div>
-                                <div class="timeline-content">
-                                    <h2>Order Execution (60 Days)</h2>
-                                    <p>Once production starts, we maintain a strict 60-day timeline to ensure your collection moves from concept to container in record time. This phase involves rigorous monitoring of every manufacturing stage, including yarn sourcing, knitting, and dyeing.</p>
-                                </div>
-                                <div class="timeline-image">
-                                    <img src="{{asset('images/steps/Order-execution.jpg')}}" alt="steps"/>
-                                </div>
-                            </div>
-
-                            <div class="timeline-item">
-                                <div class="timeline-number">4</div>
-                                <div class="timeline-content">
-                                    <h2>Quality Gate (100%)</h2>
-                                    <p>Our "3-Gate" defense protocol provides total peace of mind through a zero-defect supply chain. We conduct multi-stage inline inspections and a final statistical audit to AQL 1.5/2.5 standards to verify that every item is retail-ready.</p>
-                                </div>
-                                <div class="timeline-image">
-                                    <img src="{{asset('images/steps/Quality-gate.jpg')}}" alt="steps"/>
-                                </div>
-                            </div>
-
-                            <div class="timeline-item">
-                                <div class="timeline-number">5</div>
-                                <div class="timeline-content">
-                                    <h2>Logistics (100%)</h2>
-                                    <p>We guarantee a seamless export experience by managing all documentation and complex logistics requirements. Our commitment to 100% on-time shipments ensures reliable global delivery to your warehouses across the UK, EU, USA, and beyond.</p>
-                                </div>
-                                <div class="timeline-image">
-                                    <img src="{{asset('images/steps/Logistics.jpg')}}" alt="steps"/>
-                                </div>
-                            </div>
-
-
-
+                            <div id="grad_top"></div>
+                            <div id="grad_bottom"></div>
+                            <a href="#" id="next">+</a>
+                            <a href="#" id="prev" style="margin-bottom: 20px;">-</a>
                         </div>
-                        {{--<div class="testimonilas-carousel-wrap fl-wrap">
-                            <div class="tc-button tc-button-next"><i class="fal fa-angle-right"></i></div>
-                            <div class="tc-button tc-button-prev"><i class="fal fa-angle-left"></i></div>
-                            <div class="testimonilas-carousel">
-                                <div class="swiper-container">
-                                    <div class="swiper-wrapper">
-                                        <!--testi-item-->
-                                        <div class="swiper-slide">
-                                            <div class="testi-item fl-wrap">
-                                                <div class="testimonilas-text fl-wrap">
-                                                    <h3>Inquiry & Costing (24 Hours)</h3>
-                                                    <p>We prioritize speed to keep your business moving by providing a rapid price analysis within 24 hours. Our team performs a strategic factory selection from our vetted network to ensure your project aligns with the best cost-to-quality ratio.</p>
-                                                    <span class="testi-number">01.</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--testi-item end-->
-                                        <!--testi-item-->
-                                        <div class="swiper-slide">
-                                            <div class="testi-item fl-wrap">
-                                                <div class="testimonilas-text fl-wrap">
-                                                    <h3>Sampling & PD (7 Days)</h3>
-                                                    <p>We transform your vision into physical reality through rapid prototyping and tech-pack development. Within just 7 days, we deliver high-quality physical prototypes and lab dips, ensuring your design is technically precise before mass production begins.</p>
-                                                    <span class="testi-number">02.</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--testi-item end-->
-                                        <!--testi-item-->
-                                        <div class="swiper-slide">
-                                            <div class="testi-item fl-wrap">
-                                                <div class="testimonilas-text fl-wrap">
-                                                    <h3>Order Execution (60 Days)</h3>
-                                                    <p>Once production starts, we maintain a strict 60-day timeline to ensure your collection moves from concept to container in record time. This phase involves rigorous monitoring of every manufacturing stage, including yarn sourcing, knitting, and dyeing.</p>
-                                                    <span class="testi-number">03.</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--testi-item end-->
-                                        <!--testi-item-->
-                                        <div class="swiper-slide">
-                                            <div class="testi-item fl-wrap">
-                                                <div class="testimonilas-text fl-wrap">
-                                                    <h3>Quality Gate (100%)</h3>
-                                                    <p>Our "3-Gate" defense protocol provides total peace of mind through a zero-defect supply chain. We conduct multi-stage inline inspections and a final statistical audit to AQL 1.5/2.5 standards to verify that every item is retail-ready.</p>
-                                                    <span class="testi-number">04.</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--testi-item end-->
-                                        <!--testi-item-->
-                                        <div class="swiper-slide">
-                                            <div class="testi-item fl-wrap">
-                                                <div class="testimonilas-text fl-wrap">
-                                                    <h3>Logistics (100%)</h3>
-                                                    <p>We guarantee a seamless export experience by managing all documentation and complex logistics requirements. Our commitment to 100% on-time shipments ensures reliable global delivery to your warehouses across the UK, EU, USA, and beyond.</p>
-                                                    <span class="testi-number">05.</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--testi-item end-->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tc-pagination"></div>
-                        </div>--}}
+
+                        
                         <!-- client-list -->
                         {{--<div class="fl-wrap client-list">
                             <ul class="">
@@ -492,5 +573,100 @@
                 behavior: 'smooth'
             });
         });
+
+
+        (function () {
+                const datesScroller = document.getElementById('datesScroller');
+                const issuesScroller = document.getElementById('issuesScroller');
+                const dateLinks = Array.from(datesScroller.querySelectorAll('a'));
+                const issueItems = Array.from(issuesScroller.querySelectorAll('li'));
+
+                const nextBtn = document.getElementById('next');
+                const prevBtn = document.getElementById('prev');
+
+                // Map date href (e.g. "#1900") to the corresponding index.
+                const idToIndex = new Map();
+                dateLinks.forEach((a, idx) => {
+                    const href = a.getAttribute('href') || '';
+                    const id = href.startsWith('#') ? href.slice(1) : href;
+                    if (id) idToIndex.set(id, idx);
+                });
+
+                // Each date row is 100px tall and each issue panel is 600px tall (from CSS).
+                const DATE_ROW_HEIGHT = 100;
+                const ISSUE_HEIGHT = 600;
+
+                const datesWindowHeight = document.getElementById('dates').clientHeight || 600;
+                const VISIBLE_DATE_COUNT = Math.max(1, Math.floor(datesWindowHeight / DATE_ROW_HEIGHT));
+
+                let currentIndex = Math.max(0, dateLinks.findIndex(a => a.classList.contains('selected')));
+
+                function setArrowState() {
+                    const isFirst = currentIndex <= 0;
+                    const isLast = currentIndex >= dateLinks.length - 1;
+
+                    if (prevBtn) {
+                        prevBtn.classList.toggle('disabled', isFirst);
+                        prevBtn.setAttribute('aria-disabled', String(isFirst));
+                    }
+                    if (nextBtn) {
+                        nextBtn.classList.toggle('disabled', isLast);
+                        nextBtn.setAttribute('aria-disabled', String(isLast));
+                    }
+                }
+
+                function setSelectedIndex(nextIndex, { animate } = { animate: true }) {
+                    const idx = Math.max(0, Math.min(dateLinks.length - 1, nextIndex));
+                    currentIndex = idx;
+
+                    // Selected classes (used by your CSS rules).
+                    dateLinks.forEach(a => a.classList.remove('selected'));
+                    issueItems.forEach(li => li.classList.remove('selected'));
+
+                    dateLinks[idx].classList.add('selected');
+                    issueItems[idx].classList.add('selected');
+
+                    // Scroll date window: keep the selected item within the visible block.
+                    const maxStart = Math.max(0, dateLinks.length - VISIBLE_DATE_COUNT);
+                    const startIndex = Math.min(maxStart, Math.max(0, idx - (VISIBLE_DATE_COUNT - 1)));
+
+                    datesScroller.style.transition = animate ? '' : 'none';
+                    issuesScroller.style.transition = animate ? '' : 'none';
+
+                    datesScroller.style.transform = 'translateY(' + (-startIndex * DATE_ROW_HEIGHT) + 'px)';
+                    issuesScroller.style.transform = 'translateY(' + (-idx * ISSUE_HEIGHT) + 'px)';
+
+                    setArrowState();
+                }
+
+                // Click on dates to jump.
+                dateLinks.forEach((a, idx) => {
+                    a.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        setSelectedIndex(idx, { animate: true });
+                    });
+                });
+
+                // Bottom + and top - navigation.
+                if (nextBtn) {
+                    nextBtn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        if (nextBtn.classList.contains('disabled')) return;
+                        setSelectedIndex(currentIndex + 1, { animate: true });
+                    });
+                }
+
+                if (prevBtn) {
+                    prevBtn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        if (prevBtn.classList.contains('disabled')) return;
+                        setSelectedIndex(currentIndex - 1, { animate: true });
+                    });
+                }
+
+                // Initial positioning: show years up to 1977 in the window.
+                setSelectedIndex(currentIndex, { animate: false });
+                setArrowState();
+            })();
     </script>
 @endsection

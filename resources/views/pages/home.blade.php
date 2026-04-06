@@ -35,7 +35,9 @@
                                         <h1>Your Premium <br> Partner <br/><span>In Bangladesh</span></h1>
                                         <h4>Providing end-to-end supply chain solutions from initial fabric innovation and tech-pack development to the final shipment.</h4>
                                         <div class="clearfix"></div>
-                                        <a href="{{route('contact')}}" class="btn ajax  fl-btn color-bg"><span>Contact Us</span></a>
+                                        <a href="{{ route('about') }}#sec3" class="btn fl-btn color-bg">
+                                            <span>Our Roadmap</span>
+                                        </a>
                                     </div>
                                 </div>
                                 <!-- swiper-slide end-->
