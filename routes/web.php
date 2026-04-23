@@ -3,9 +3,17 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Chat;
+use Illuminate\Support\Facades\Http;
 
 Route::get('/chat-test', [Chat::class, 'index']);
 Route::post('/chat-test/send', [Chat::class, 'chat'])->name('chat.send');
+
+Route::get('/test-ai', function () {
+    $response = Http::withToken(config('ai.providers.openai.key'))
+        ->get('https://api.openai.com/v1/vector_stores/vs_69e9ccc2fb5881918d10624f65eceb22');
+    
+    return $response->json();
+});
 
 
 Route::get('/', function () {return view('pages.home');})->name('home');

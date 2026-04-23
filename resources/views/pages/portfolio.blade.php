@@ -12,14 +12,14 @@
             <div class="gallery-filters-wrap">
                 <div class="gallery-filters init_hidden_filter">
                     <a href="#" class="gallery-filter  gallery-filter-active" data-filter="*">All products</a>
-                    <a href="#" class="gallery-filter" data-filter=".web">Knitwear</a>
-                    <a href="#" class="gallery-filter" data-filter=".photography">Woven</a>
-                    <a href="#" class="gallery-filter" data-filter=".branding">Denim</a>
-                    <a href="#" class="gallery-filter" data-filter=".uides">Sweater</a>
-                    <a href="#" class="gallery-filter" data-filter=".branding">Outerwear</a>
-                    <a href="#" class="gallery-filter" data-filter=".uides">Workwear</a>
-                    <a href="#" class="gallery-filter" data-filter=".photography">Home Textiles</a>
-                    <a href="#" class="gallery-filter" data-filter=".web">Accessories</a>
+                    <a href="#" class="gallery-filter" data-filter=".accessories">Accessories</a>
+                    <a href="#" class="gallery-filter" data-filter=".denim">Denim</a>
+                    <a href="#" class="gallery-filter" data-filter=".home-textiles">Home Textiles</a>
+                    <a href="#" class="gallery-filter" data-filter=".knitewear">Knitewear</a>
+                    <a href="#" class="gallery-filter" data-filter=".outerwear">Outerwear</a>
+                    <a href="#" class="gallery-filter" data-filter=".sweaters">Sweaters</a>
+                    <a href="#" class="gallery-filter" data-filter=".workwear">Workwear</a>
+                    <a href="#" class="gallery-filter" data-filter=".woven">Woven</a>
                 </div>
                 <div class="psn_button act-filter"><i class="fal fa-sort"></i> FIlter </div>
             </div>
@@ -74,12 +74,13 @@
             <div class="column-wrap-container no-pad-cwc fl-wrap">
                 <!-- portfolio start -->
                 <div class="gallery-items min-pad    fl-wrap  " id="port-scroll">
+                    
                     <!-- gallery-item-->
-                    <div class="gallery-item  web branding">
+                    <div class="gallery-item accessories">
                         <div class="grid-item-holder hov_zoom">
-                            <img  src="images/folio/1.jpg"    alt="">
+                            <img  src="images/folio/20.jpg"    alt="">
                             <div class="grid-det">
-                                <a href="images/folio/1.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
+                                <a href="images/folio/20.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
                                 <div class="grid-det_category"><a href="#">Design  </a> <a href="#"> Branding</a></div>
                                 <div class="grid-det-item">
                                     <a href="#" class="ajax grid-det_link">Fitness Studio Website<i class="fal fa-long-arrow-right"></i></a>
@@ -89,42 +90,14 @@
                     </div>
                     <!-- gallery-item end-->
                     <!-- gallery-item-->
-                    <div class="gallery-item  photography uides">
+                    <div class="gallery-item accessories">
                         <div class="grid-item-holder hov_zoom">
-                            <img  src="images/folio/2.jpg"    alt="">
+                            <img  src="images/folio/21.jpg"    alt="">
                             <div class="grid-det">
-                                <a href="images/folio/2.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
-                                <div class="grid-det_category"><a href="#">Design  </a> <a href="#"> UI/UX</a></div>
-                                <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Architecture Agensy<i class="fal fa-long-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- gallery-item end-->
-                    <!-- gallery-item-->
-                    <div class="gallery-item  web">
-                        <div class="grid-item-holder hov_zoom">
-                            <img  src="images/folio/3.jpg"    alt="">
-                            <div class="grid-det">
-                                <a href="https://vimeo.com/6698875" class="grid-media-zoom   image-popup"><i class="far fa-play"></i></a>
-                                <div class="grid-det_category"><a href="#">Design  </a> <a href="#"> Photography</a></div>
-                                <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Video Project<i class="fal fa-long-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- gallery-item end-->
-                    <!-- gallery-item-->
-                    <div class="gallery-item gallery-item-second  photography">
-                        <div class="grid-item-holder hov_zoom">
-                            <img  src="images/folio/4.jpg"    alt="">
-                            <div class="grid-det">
-                                <a href="images/folio/4.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
+                                <a href="images/folio/21.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
                                 <div class="grid-det_category"><a href="#">Design  </a> <a href="#"> Branding</a></div>
                                 <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Photography Project<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Fitness Studio Website<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -145,7 +118,7 @@
                     </div>
                     <!-- gallery-item end-->
                     <!-- gallery-item-->
-                    <div class="gallery-item    branding">
+                    <div class="gallery-item denim">
                         <div class="grid-item-holder hov_zoom">
                             <img  src="images/folio/6.jpg"    alt="">
                             <div class="grid-det">
@@ -159,7 +132,7 @@
                     </div>
                     <!-- gallery-item end-->
                     <!-- gallery-item-->
-                    <div class="gallery-item  uides">
+                    <div class="gallery-item denim">
                         <div class="grid-item-holder hov_zoom">
                             <img  src="images/folio/7.jpg"    alt="">
                             <div class="grid-det">
@@ -173,7 +146,7 @@
                     </div>
                     <!-- gallery-item end-->
                     <!-- gallery-item-->
-                    <div class="gallery-item  web  photography">
+                    <div class="gallery-item denim knitewear">
                         <div class="grid-item-holder hov_zoom">
                             <img  src="images/folio/8.jpg"    alt="">
                             <div class="grid-det">
@@ -187,7 +160,7 @@
                     </div>
                     <!-- gallery-item end-->
                     <!-- gallery-item-->
-                    <div class="gallery-item  uides">
+                    <div class="gallery-item sweaters">
                         <div class="grid-item-holder hov_zoom">
                             <img  src="images/folio/9.jpg"    alt="">
                             <div class="grid-det">
@@ -201,7 +174,7 @@
                     </div>
                     <!-- gallery-item end-->
                     <!-- gallery-item-->
-                    <div class="gallery-item  web branding">
+                    <div class="gallery-item denim">
                         <div class="grid-item-holder hov_zoom">
                             <img  src="images/folio/10.jpg"    alt="">
                             <div class="grid-det">
@@ -215,11 +188,81 @@
                     </div>
                     <!-- gallery-item end-->
                     <!-- gallery-item-->
-                    <div class="gallery-item  photography branding">
+                    <div class="gallery-item workwear">
+                        <div class="grid-item-holder hov_zoom">
+                            <img  src="images/folio/31.jpg"    alt="">
+                            <div class="grid-det">
+                                <a href="images/folio/31.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
+                                <div class="grid-det_category"><a href="#">Design  </a> <a href="#"> Branding</a></div>
+                                <div class="grid-det-item">
+                                    <a href="#" class="ajax grid-det_link">Online Shop Website<i class="fal fa-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- gallery-item end-->
+                    <!-- gallery-item-->
+                    <div class="gallery-item workwear">
+                        <div class="grid-item-holder hov_zoom">
+                            <img  src="images/folio/32.jpg"    alt="">
+                            <div class="grid-det">
+                                <a href="images/folio/32.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
+                                <div class="grid-det_category"><a href="#">Design  </a> <a href="#"> Branding</a></div>
+                                <div class="grid-det-item">
+                                    <a href="#" class="ajax grid-det_link">Online Shop Website<i class="fal fa-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- gallery-item end-->
+                    <!-- gallery-item-->
+                    <div class="gallery-item workwear">
+                        <div class="grid-item-holder hov_zoom">
+                            <img  src="images/folio/33.jpg"    alt="">
+                            <div class="grid-det">
+                                <a href="images/folio/33.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
+                                <div class="grid-det_category"><a href="#">Design  </a> <a href="#"> Branding</a></div>
+                                <div class="grid-det-item">
+                                    <a href="#" class="ajax grid-det_link">Online Shop Website<i class="fal fa-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- gallery-item end-->
+                    <!-- gallery-item-->
+                    <div class="gallery-item workwear">
+                        <div class="grid-item-holder hov_zoom">
+                            <img  src="images/folio/34.jpg"    alt="">
+                            <div class="grid-det">
+                                <a href="images/folio/34.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
+                                <div class="grid-det_category"><a href="#">Design  </a> <a href="#"> Branding</a></div>
+                                <div class="grid-det-item">
+                                    <a href="#" class="ajax grid-det_link">Online Shop Website<i class="fal fa-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- gallery-item end-->
+                    <!-- gallery-item-->
+                    <div class="gallery-item  photography sweaters">
                         <div class="grid-item-holder hov_zoom">
                             <img  src="images/folio/17.jpg"    alt="">
                             <div class="grid-det">
                                 <a href="images/folio/17.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
+                                <div class="grid-det_category"><a href="#">Photography  </a> <a href="#"> Branding</a></div>
+                                <div class="grid-det-item">
+                                    <a href="#" class="ajax grid-det_link">Photography Studio<i class="fal fa-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- gallery-item end-->
+                    <!-- gallery-item-->
+                    <div class="gallery-item  photography sweaters">
+                        <div class="grid-item-holder hov_zoom">
+                            <img  src="images/folio/13.jpg"    alt="">
+                            <div class="grid-det">
+                                <a href="images/folio/13.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
                                 <div class="grid-det_category"><a href="#">Photography  </a> <a href="#"> Branding</a></div>
                                 <div class="grid-det-item">
                                     <a href="#" class="ajax grid-det_link">Photography Studio<i class="fal fa-long-arrow-right"></i></a>
@@ -234,6 +277,188 @@
                             <img  src="images/folio/18.jpg"    alt="">
                             <div class="grid-det">
                                 <a href="images/folio/18.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
+                                <div class="grid-det_category"><a href="#">Development</a> <a href="#"> Design </a></div>
+                                <div class="grid-det-item">
+                                    <a href="#" class="ajax grid-det_link">Vintage Branding<i class="fal fa-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- gallery-item end-->
+                    <!-- gallery-item-->
+                    <div class="gallery-item knitewear">
+                        <div class="grid-item-holder hov_zoom">
+                            <img  src="images/folio/22.jpg"    alt="">
+                            <div class="grid-det">
+                                <a href="images/folio/22.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
+                                <div class="grid-det_category"><a href="#">Development</a> <a href="#"> Design </a></div>
+                                <div class="grid-det-item">
+                                    <a href="#" class="ajax grid-det_link">Vintage Branding<i class="fal fa-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- gallery-item end-->
+                    <!-- gallery-item-->
+                    <div class="gallery-item woven">
+                        <div class="grid-item-holder hov_zoom">
+                            <img  src="images/folio/35.jpg"    alt="">
+                            <div class="grid-det">
+                                <a href="images/folio/35.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
+                                <div class="grid-det_category"><a href="#">Development</a> <a href="#"> Design </a></div>
+                                <div class="grid-det-item">
+                                    <a href="#" class="ajax grid-det_link">Vintage Branding<i class="fal fa-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- gallery-item end-->
+                    <!-- gallery-item-->
+                    <div class="gallery-item woven">
+                        <div class="grid-item-holder hov_zoom">
+                            <img  src="images/folio/36.jpg"    alt="">
+                            <div class="grid-det">
+                                <a href="images/folio/36.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
+                                <div class="grid-det_category"><a href="#">Development</a> <a href="#"> Design </a></div>
+                                <div class="grid-det-item">
+                                    <a href="#" class="ajax grid-det_link">Vintage Branding<i class="fal fa-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- gallery-item end-->
+                    <!-- gallery-item-->
+                    <div class="gallery-item woven">
+                        <div class="grid-item-holder hov_zoom">
+                            <img  src="images/folio/37.jpg"    alt="">
+                            <div class="grid-det">
+                                <a href="images/folio/37.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
+                                <div class="grid-det_category"><a href="#">Development</a> <a href="#"> Design </a></div>
+                                <div class="grid-det-item">
+                                    <a href="#" class="ajax grid-det_link">Vintage Branding<i class="fal fa-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- gallery-item end-->
+                    <!-- gallery-item-->
+                    <div class="gallery-item woven">
+                        <div class="grid-item-holder hov_zoom">
+                            <img  src="images/folio/38.jpg"    alt="">
+                            <div class="grid-det">
+                                <a href="images/folio/38.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
+                                <div class="grid-det_category"><a href="#">Development</a> <a href="#"> Design </a></div>
+                                <div class="grid-det-item">
+                                    <a href="#" class="ajax grid-det_link">Vintage Branding<i class="fal fa-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- gallery-item end-->
+                    <!-- gallery-item-->
+                    <div class="gallery-item knitewear">
+                        <div class="grid-item-holder hov_zoom">
+                            <img  src="images/folio/23.jpg"    alt="">
+                            <div class="grid-det">
+                                <a href="images/folio/23.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
+                                <div class="grid-det_category"><a href="#">Development</a> <a href="#"> Design </a></div>
+                                <div class="grid-det-item">
+                                    <a href="#" class="ajax grid-det_link">Vintage Branding<i class="fal fa-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- gallery-item end-->
+                    <!-- gallery-item-->
+                    <div class="gallery-item knitewear">
+                        <div class="grid-item-holder hov_zoom">
+                            <img  src="images/folio/24.jpg"    alt="">
+                            <div class="grid-det">
+                                <a href="images/folio/24.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
+                                <div class="grid-det_category"><a href="#">Development</a> <a href="#"> Design </a></div>
+                                <div class="grid-det-item">
+                                    <a href="#" class="ajax grid-det_link">Vintage Branding<i class="fal fa-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- gallery-item end-->
+                    <!-- gallery-item-->
+                    <div class="gallery-item home-textiles">
+                        <div class="grid-item-holder hov_zoom">
+                            <img  src="images/folio/25.jpg"    alt="">
+                            <div class="grid-det">
+                                <a href="images/folio/25.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
+                                <div class="grid-det_category"><a href="#">Development</a> <a href="#"> Design </a></div>
+                                <div class="grid-det-item">
+                                    <a href="#" class="ajax grid-det_link">Vintage Branding<i class="fal fa-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- gallery-item end-->
+                    <!-- gallery-item-->
+                    <div class="gallery-item home-textiles">
+                        <div class="grid-item-holder hov_zoom">
+                            <img  src="images/folio/26.jpg"    alt="">
+                            <div class="grid-det">
+                                <a href="images/folio/26.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
+                                <div class="grid-det_category"><a href="#">Development</a> <a href="#"> Design </a></div>
+                                <div class="grid-det-item">
+                                    <a href="#" class="ajax grid-det_link">Vintage Branding<i class="fal fa-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- gallery-item end-->
+                    <!-- gallery-item-->
+                    <div class="gallery-item outerwear">
+                        <div class="grid-item-holder hov_zoom">
+                            <img  src="images/folio/27.jpg"    alt="">
+                            <div class="grid-det">
+                                <a href="images/folio/27.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
+                                <div class="grid-det_category"><a href="#">Development</a> <a href="#"> Design </a></div>
+                                <div class="grid-det-item">
+                                    <a href="#" class="ajax grid-det_link">Vintage Branding<i class="fal fa-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- gallery-item end-->
+                    <!-- gallery-item-->
+                    <div class="gallery-item outerwear">
+                        <div class="grid-item-holder hov_zoom">
+                            <img  src="images/folio/28.jpg"    alt="">
+                            <div class="grid-det">
+                                <a href="images/folio/28.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
+                                <div class="grid-det_category"><a href="#">Development</a> <a href="#"> Design </a></div>
+                                <div class="grid-det-item">
+                                    <a href="#" class="ajax grid-det_link">Vintage Branding<i class="fal fa-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- gallery-item end-->
+                    <!-- gallery-item-->
+                    <div class="gallery-item outerwear">
+                        <div class="grid-item-holder hov_zoom">
+                            <img  src="images/folio/29.jpg"    alt="">
+                            <div class="grid-det">
+                                <a href="images/folio/29.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
+                                <div class="grid-det_category"><a href="#">Development</a> <a href="#"> Design </a></div>
+                                <div class="grid-det-item">
+                                    <a href="#" class="ajax grid-det_link">Vintage Branding<i class="fal fa-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- gallery-item end-->
+                    <!-- gallery-item-->
+                    <div class="gallery-item outerwear">
+                        <div class="grid-item-holder hov_zoom">
+                            <img  src="images/folio/30.jpg"    alt="">
+                            <div class="grid-det">
+                                <a href="images/folio/30.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
                                 <div class="grid-det_category"><a href="#">Development</a> <a href="#"> Design </a></div>
                                 <div class="grid-det-item">
                                     <a href="#" class="ajax grid-det_link">Vintage Branding<i class="fal fa-long-arrow-right"></i></a>

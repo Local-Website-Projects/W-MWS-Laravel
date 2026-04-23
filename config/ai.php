@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('AI_PROVIDER', 'gemini'),
+    'default' => env('AI_PROVIDER', 'openai'),
     /*'default_for_images' => 'gemini',
     'default_for_audio' => 'openai',
     'default_for_transcription' => 'openai',
@@ -79,12 +79,12 @@ return [
             'key' => env('ELEVENLABS_API_KEY'),
         ],*/
 
-        'gemini' => [
+        /*'gemini' => [
             'driver' => 'gemini',
             'key' => env('GEMINI_API_KEY'),
             'timeout' => 60,         // Time allowed for the full response (seconds)
             'connect_timeout' => 10, // Time allowed to establish the connection
-        ],
+        ], */
 
         /*'groq' => [
             'driver' => 'groq',
@@ -107,10 +107,10 @@ return [
             'url' => env('OLLAMA_BASE_URL', 'http://localhost:11434'),
         ],*/
 
-        /*'openai' => [
+        'openai' => [
             'driver' => 'openai',
             'key' => env('OPENAI_API_KEY'),
-        ],*/
+        ],
 
         /*'openrouter' => [
             'driver' => 'openrouter',

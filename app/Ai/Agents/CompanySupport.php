@@ -33,7 +33,7 @@ class CompanySupport implements Agent, HasTools
     {
         return [
             // Keep your existing knowledge base
-            new FileSearch(stores: ['fileSearchStores/company-knowledge-swwwhrrwow1d']),
+            new FileSearch(stores: ['vs_69e9ccc2fb5881918d10624f65eceb22']),
             
             // Add the new lead saving tool
             new SaveLead(), 

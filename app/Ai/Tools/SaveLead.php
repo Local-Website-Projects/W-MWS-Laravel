@@ -22,7 +22,7 @@ class SaveLead implements Tool
 
     /**
      * Define the tool input schema for the AI provider.
-     */
+     */ 
     public function schema(JsonSchema $schema): array
     {
         return [

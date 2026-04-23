@@ -13,6 +13,7 @@ return new class extends AiMigration
     {
         Schema::create('agent_conversations', function (Blueprint $table) {
             $table->string('id', 36)->primary();
+            $table->string('session_id')->unique(); 
             $table->foreignId('user_id');
             $table->string('title');
             $table->timestamps();
