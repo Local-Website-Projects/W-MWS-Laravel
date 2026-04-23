@@ -227,21 +227,21 @@
                                 <!--ms_item-->
                                 <div class="swiper-slide">
                                     <div class="ms-item_fs fl-wrap">
-                                        <div class="bg par-elem"  data-bg="images/bg/10.jpg"  ></div>
+                                        <div class="bg par-elem"  data-bg="images/bg/10.webp"  ></div>
                                     </div>
                                 </div>
                                 <!--ms_item end-->
                                 <!--ms_item-->
                                 <div class="swiper-slide ">
                                     <div class="ms-item_fs fl-wrap">
-                                        <div class="bg par-elem"  data-bg="images/bg/8.jpg"></div>
+                                        <div class="bg par-elem"  data-bg="images/bg/8.webp"></div>
                                     </div>
                                 </div>
                                 <!--ms_item end-->
                                 <!--ms_item-->
                                 <div class="swiper-slide">
                                     <div class="ms-item_fs fl-wrap">
-                                        <div class="bg par-elem"  data-bg="images/bg/13.jpg"></div>
+                                        <div class="bg par-elem"  data-bg="images/bg/13.webp"></div>
                                     </div>
                                 </div>
                                 <!--ms_item end-->
@@ -489,31 +489,31 @@
                                     <li><a href="#step5">5</a></li>
                                 </ul>
                             </div>
-                
+
                             <div id="issues">
                                 <ul id="issuesScroller">
                                     <li id="step1" class="selected">
-                                        <img src="{{ asset('images/steps/Inquiry-and-costing-24-hours.jpg') }}" />
+                                        <img src="{{ asset('images/steps/Inquiry-and-costing-24-hours.webp') }}" />
                                         <h1>Inquiry &amp; Costing (24 Hours)</h1>
                                         <p>We prioritize speed to keep your business moving by providing a rapid price analysis within 24 hours. Our team performs a strategic factory selection from our vetted network to ensure your project aligns with the best cost-to-quality ratio.</p>
                                     </li>
                                     <li id="step2">
-                                        <img src="{{ asset('images/steps/factory-sampling-and-pd.jpg') }}" />
+                                        <img src="{{ asset('images/steps/factory-sampling-and-pd.webp') }}" />
                                         <h1>Sampling &amp; PD (7 Days)</h1>
                                         <p>We transform your vision into physical reality through rapid prototyping and tech-pack development. Within just 7 days, we deliver high-quality physical prototypes and lab dips, ensuring your design is technically precise before mass production begins.</p>
                                     </li>
                                     <li id="step3">
-                                        <img src="{{ asset('images/steps/Order-execution.jpg') }}" />
+                                        <img src="{{ asset('images/steps/Order-execution.webp') }}" />
                                         <h1>Order Execution (60 Days)</h1>
                                         <p>Once production starts, we maintain a strict 60-day timeline to ensure your collection moves from concept to container in record time. This phase involves rigorous monitoring of every manufacturing stage, including yarn sourcing, knitting, and dyeing.</p>
                                     </li>
                                     <li id="step4">
-                                        <img src="{{ asset('images/steps/Quality-gate.jpg') }}" />
+                                        <img src="{{ asset('images/steps/Quality-gate.webp') }}" />
                                         <h1>Quality Gate (100%)</h1>
                                         <p>Our &quot;3-Gate&quot; defense protocol provides total peace of mind through a zero-defect supply chain. We conduct multi-stage inline inspections and a final statistical audit to AQL 1.5/2.5 standards to verify that every item is retail-ready.</p>
                                     </li>
                                     <li id="step5">
-                                        <img src="{{ asset('images/steps/Logistics.jpg') }}" />
+                                        <img src="{{ asset('images/steps/Logistics.webp') }}" />
                                         <h1>Logistics (100%)</h1>
                                         <p>We guarantee a seamless export experience by managing all documentation and complex logistics requirements. Our commitment to 100% on-time shipments ensures reliable global delivery to your warehouses across the UK, EU, USA, and beyond.</p>
                                     </li>
@@ -525,7 +525,7 @@
                             <a href="#" id="prev" style="margin-bottom: 20px;">-</a>
                         </div>
 
-                        
+
                         <!-- client-list -->
                         {{--<div class="fl-wrap client-list">
                             <ul class="">

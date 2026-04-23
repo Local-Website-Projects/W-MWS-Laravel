@@ -74,25 +74,25 @@
                         <div class="swiper-wrapper" >
                             <!-- swiper-slide-->
                             <div class="swiper-slide">
-                                <div class="bg"  data-bg="images/bg/10.jpg" data-swiper-parallax="20%"></div>
+                                <div class="bg"  data-bg="images/bg/10.webp" data-swiper-parallax="20%"></div>
                                 <div class="overlay"></div>
                             </div>
                             <!-- swiper-slide end-->
                             <!-- swiper-slide-->
                             <div class="swiper-slide">
-                                <div class="bg"  data-bg="images/bg/13.jpg" data-swiper-parallax="20%"></div>
+                                <div class="bg"  data-bg="images/bg/13.webp" data-swiper-parallax="20%"></div>
                                 <div class="overlay"></div>
                             </div>
                             <!-- swiper-slide end-->
                             <!-- swiper-slide-->
                             <div class="swiper-slide">
-                                <div class="bg"  data-bg="images/bg/7.jpg" data-swiper-parallax="20%"></div>
+                                <div class="bg"  data-bg="images/bg/7.webp" data-swiper-parallax="20%"></div>
                                 <div class="overlay"></div>
                             </div>
                             <!-- swiper-slide end-->
                             <!-- swiper-slide-->
                             <div class="swiper-slide">
-                                <div class="bg"  data-bg="images/bg/8.jpg" data-swiper-parallax="20%"></div>
+                                <div class="bg"  data-bg="images/bg/8.webp" data-swiper-parallax="20%"></div>
                                 <div class="overlay"></div>
                             </div>
                             <!-- swiper-slide end-->

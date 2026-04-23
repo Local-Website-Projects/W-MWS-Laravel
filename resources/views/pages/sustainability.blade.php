@@ -16,13 +16,13 @@
                         <li>
                             <a href="{{route('contact')}}" class="ln ajax"><i class="fal fa-long-arrow-left"></i><span><strong>Contact Us</strong></span></a>
                             <div class="content-nav-media">
-                                <div class="bg"  data-bg="images/folio/5.jpg"></div>
+                                <div class="bg"  data-bg="images/folio/5.webp"></div>
                             </div>
                         </li>
                         <li>
                             <a href="{{route('portfolio')}}" class="rn ajax"><span ><strong>See Products</strong></span> <i class="fal fa-long-arrow-right"></i></a>
                             <div class="content-nav-media">
-                                <div class="bg"  data-bg="images/folio/8.jpg"></div>
+                                <div class="bg"  data-bg="images/folio/8.webp"></div>
                             </div>
                         </li>
                     </ul>
@@ -49,7 +49,7 @@
             <div class="pr-bg"></div>
             <!--fixed-column-wrap-content-->
             <div class="fixed-column-wrap-content">
-                <div class="bg"  data-bg="images/bg/17.jpg"></div>
+                <div class="bg"  data-bg="images/bg/17.webp"></div>
                 <div class="overlay"></div>
                 <div class="progress-bar-wrap bot-element">
                     <div class="progress-bar"></div>
@@ -87,81 +87,81 @@
                             <!-- gallery-item-->
                             <div class="gallery-item">
                                 <div class="grid-item-holder hov_zoom">
-                                    <img  src="images/certificates/1.png" alt="">
+                                    <img  src="images/certificates/1.webp" alt="">
                                 </div>
                             </div>
                             <!-- gallery-item end-->
                             <!-- gallery-item-->
                             <div class="gallery-item">
                                 <div class="grid-item-holder hov_zoom">
-                                    <img  src="images/certificates/2.png" alt="">
+                                    <img  src="images/certificates/2.webp" alt="">
                                 </div>
                             </div>
                             <!-- gallery-item end-->
                             <!-- gallery-item-->
                             <div class="gallery-item">
                                 <div class="grid-item-holder hov_zoom">
-                                    <img  src="images/certificates/3.png" alt="">
+                                    <img  src="images/certificates/3.webp" alt="">
                                 </div>
                             </div>
                             <!-- gallery-item end-->
                             <!-- gallery-item-->
                             <div class="gallery-item">
                                 <div class="grid-item-holder hov_zoom">
-                                    <img  src="images/certificates/4.png" alt="">
+                                    <img  src="images/certificates/4.webp" alt="">
                                 </div>
                             </div>
                             <!-- gallery-item end-->
                             <!-- gallery-item-->
                             <div class="gallery-item">
                                 <div class="grid-item-holder hov_zoom">
-                                    <img  src="images/certificates/5.png" alt="">
+                                    <img  src="images/certificates/5.webp" alt="">
                                 </div>
                             </div>
                             <!-- gallery-item end-->
                             <!-- gallery-item-->
                             <div class="gallery-item">
                                 <div class="grid-item-holder hov_zoom">
-                                    <img  src="images/certificates/6.png" alt="">
+                                    <img  src="images/certificates/6.webp" alt="">
                                 </div>
                             </div>
                             <!-- gallery-item end-->
                             <!-- gallery-item-->
                             <div class="gallery-item">
                                 <div class="grid-item-holder hov_zoom">
-                                    <img  src="images/certificates/7.png" alt="">
+                                    <img  src="images/certificates/7.webp" alt="">
                                 </div>
                             </div>
                             <!-- gallery-item end-->
                             <!-- gallery-item-->
                             <div class="gallery-item">
                                 <div class="grid-item-holder hov_zoom">
-                                    <img  src="images/certificates/8.png" alt="">
+                                    <img  src="images/certificates/8.webp" alt="">
                                 </div>
                             </div>
                             <!-- gallery-item end-->
                             <!-- gallery-item-->
                             <div class="gallery-item">
                                 <div class="grid-item-holder hov_zoom">
-                                    <img  src="images/certificates/9.png" alt="">
+                                    <img  src="images/certificates/9.webp" alt="">
                                 </div>
                             </div>
                             <!-- gallery-item end-->
                             <!-- gallery-item-->
                             <div class="gallery-item">
                                 <div class="grid-item-holder hov_zoom">
-                                    <img  src="images/certificates/10.png" alt="">
+                                    <img  src="images/certificates/10.webp" alt="">
                                 </div>
                             </div>
                             <!-- gallery-item end-->
                             <!-- gallery-item-->
                             <div class="gallery-item">
                                 <div class="grid-item-holder hov_zoom">
-                                    <img  src="images/certificates/11.png" alt="">
+                                    <img  src="images/certificates/11.webp" alt="">
                                 </div>
                             </div>
                             <!-- gallery-item end-->
-                            
+
                         </div>
                         <!-- portfolio end -->
                         <div class="fl-wrap text-block">
