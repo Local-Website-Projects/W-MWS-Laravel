@@ -102,120 +102,85 @@
         <script   src="{{asset('js/plugins.js')}}"></script>
         <script   src="{{asset('js/scripts.js')}}"></script>
 
-    <script>
-        /**
-         * MWS AI Assistant - Frontend Logic
-         * Features: LocalStorage Persistence, Auto-Scroll, Popup Toggling
-         */
-
-        const mwsChatTrigger = document.getElementById('mws-chat-trigger');
-        const mwsChatContainer = document.getElementById('mws-chat-container');
-        const mwsCloseBtn = document.getElementById('mws-close-btn');
-        const mwsChatForm = document.getElementById('chat-form');
-        const mwsChatBox = document.getElementById('chat-box');
-        const mwsTyping = document.getElementById('typing');
-        const mwsUserInput = document.getElementById('user-input');
-
-        // 1. Toggle Chat Visibility
-        mwsChatTrigger.onclick = () => {
-            mwsChatContainer.classList.toggle('mws-hidden');
-            scrollToBottom();
-        };
-
-        mwsCloseBtn.onclick = () => {
-            mwsChatContainer.classList.add('mws-hidden');
-        };
-
-        // 2. Scroll Logic: Always keep the latest message in view
-        function scrollToBottom() {
-            mwsChatBox.scrollTop = mwsChatBox.scrollHeight;
-        }
-
-        // 3. Persistence: Save current UI state to browser memory
-        function saveHistory() {
-            localStorage.setItem('mws_chat_history', mwsChatBox.innerHTML);
-            scrollToBottom();
-        }
-
-        // 4. Persistence: Load history when the page/route changes
-        document.addEventListener('DOMContentLoaded', () => {
-            const saved = localStorage.getItem('mws_chat_history');
-            if (saved) {
-                mwsChatBox.innerHTML = saved;
-                // Timeout ensures the DOM is fully rendered before scrolling
-                setTimeout(scrollToBottom, 50);
-            }
-        });
-
-        // 5. Chat Interaction Logic
-        mwsChatForm.onsubmit = async (e) => {
-            e.preventDefault();
-
-            const message = mwsUserInput.value.trim();
-            if (!message) return;
-
-            // A. Add User Message (Right Side)
-            mwsChatBox.innerHTML += `
-        <div class="mws-msg mws-outgoing">
-            <div class="mws-bubble">${message}</div>
-        </div>`;
-
-            // Clear input and save the state immediately
-            mwsUserInput.value = '';
-            saveHistory();
-
-            // B. Show Loading Indicator
-            mwsTyping.classList.remove('mws-hidden');
-            scrollToBottom();
-
-            try {
-                // C. Send to Laravel Backend
-                const response = await fetch("{{ route('chat.send') }}", {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'X-CSRF-TOKEN': '{{ csrf_token() }}'
-                    },
-                    body: JSON.stringify({ message: message })
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // 1. Initialize DOM elements
+                const mwsChatTrigger = document.getElementById('mws-chat-trigger');
+                const mwsChatContainer = document.getElementById('mws-chat-container');
+                const mwsCloseBtn = document.getElementById('mws-close-btn');
+                const mwsChatForm = document.getElementById('chat-form');
+                const mwsChatBox = document.getElementById('chat-box');
+                const mwsTyping = document.getElementById('typing');
+                const mwsUserInput = document.getElementById('user-input');
+        
+                // 2. Handle Session ID safely
+                let sessionId = localStorage.getItem('mws_session_id');
+                if (!sessionId) {
+                    // Fallback for browsers that might not support crypto.randomUUID
+                    sessionId = Math.random().toString(36).substring(2) + Date.now().toString(36);
+                    localStorage.setItem('mws_session_id', sessionId);
+                }
+        
+                // 3. Toggle Chat Visibility
+                mwsChatTrigger.addEventListener('click', () => {
+                    mwsChatContainer.classList.toggle('mws-hidden');
+                    scrollToBottom();
                 });
-
-                if (!response.ok) throw new Error('Network response was not ok');
-
-                const data = await response.json();
-
-                // D. Add AI Message (Left Side)
-                mwsChatBox.innerHTML += `
-            <div class="mws-msg mws-incoming">
-                <div class="mws-bubble">${data.reply}</div>
-            </div>`;
-
-                saveHistory();
-
-            } catch (error) {
-                console.error('Error:', error);
-                mwsChatBox.innerHTML += `
-            <div class="mws-msg mws-incoming">
-                <div class="mws-bubble" style="background: #fee2e2; color: #b91c1c;">
-                    Sorry, I'm having trouble connecting. Please try again.
-                </div>
-            </div>`;
-            } finally {
-                // E. Clean up loading state
-                mwsTyping.classList.add('mws-hidden');
-                scrollToBottom();
-            }
-        };
-
-        /**
-         * Optional: Clear Chat Functionality
-         * You can call this from a button to reset the history
-         */
-        function clearMWSChat() {
-            if(confirm('Are you sure you want to clear the chat history?')) {
-                localStorage.removeItem('mws_chat_history');
-                location.reload();
-            }
-        }
-    </script>
+        
+                mwsCloseBtn.addEventListener('click', () => {
+                    mwsChatContainer.classList.add('mws-hidden');
+                });
+        
+                // 4. Persistence: Load history
+                const saved = localStorage.getItem('mws_chat_history');
+                if (saved) {
+                    mwsChatBox.innerHTML = saved;
+                    setTimeout(scrollToBottom, 50);
+                }
+        
+                // 5. Chat Interaction
+                mwsChatForm.addEventListener('submit', async (e) => {
+                    e.preventDefault();
+                    const message = mwsUserInput.value.trim();
+                    if (!message) return;
+        
+                    mwsChatBox.innerHTML += `<div class="mws-msg mws-outgoing"><div class="mws-bubble">${message}</div></div>`;
+                    mwsUserInput.value = '';
+                    saveHistory();
+        
+                    mwsTyping.classList.remove('mws-hidden');
+                    scrollToBottom();
+        
+                    try {
+                        const response = await fetch("{{ route('chat.send') }}", {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                                'X-CSRF-TOKEN': '{{ csrf_token() }}'
+                            },
+                            body: JSON.stringify({ message: message, session_id: sessionId })
+                        });
+        
+                        const data = await response.json();
+                        mwsChatBox.innerHTML += `<div class="mws-msg mws-incoming"><div class="mws-bubble">${data.reply}</div></div>`;
+                        saveHistory();
+                    } catch (error) {
+                        mwsChatBox.innerHTML += `<div class="mws-msg mws-incoming"><div class="mws-bubble" style="background:#fee2e2;color:#b91c1c;">Error connecting.</div></div>`;
+                    } finally {
+                        mwsTyping.classList.add('mws-hidden');
+                        scrollToBottom();
+                    }
+                });
+        
+                function scrollToBottom() {
+                    mwsChatBox.scrollTop = mwsChatBox.scrollHeight;
+                }
+        
+                function saveHistory() {
+                    localStorage.setItem('mws_chat_history', mwsChatBox.innerHTML);
+                    scrollToBottom();
+                }
+            });
+        </script>
     </body>
 </html>

@@ -7,6 +7,7 @@ use Laravel\Ai\Contracts\HasTools;
 use Laravel\Ai\Promptable;
 use Laravel\Ai\Providers\Tools\FileSearch;
 
+
 class CompanySupport implements Agent, HasTools
 {
     use Promptable;

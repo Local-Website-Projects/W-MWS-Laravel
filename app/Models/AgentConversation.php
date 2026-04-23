@@ -9,8 +9,10 @@ use Illuminate\Support\Str;
 class AgentConversation extends Model
 {
     protected $fillable = [
-        'id', // UUID
+        'id',
         'session_id',
+        'user_id', // Add this
+        'title',   // Add this
         'metadata',
     ];
 
@@ -22,15 +24,20 @@ class AgentConversation extends Model
     ];
 
     protected static function boot()
-    {
-        parent::boot();
+{
+    parent::boot();
+    
+    static::creating(function ($model) {
+        if (empty($model->id)) {
+            $model->id = (string) \Illuminate\Support\Str::uuid();
+        }
         
-        static::creating(function ($model) {
-            if (empty($model->id)) {
-                $model->id = (string) Str::uuid();
-            }
-        });
-    }
+        // Add this line to provide a default if none is provided
+        if (empty($model->user_id)) {
+            $model->user_id = 0; // Use 0 or another placeholder for guests
+        }
+    });
+}
 
     public function messages(): HasMany
     {
