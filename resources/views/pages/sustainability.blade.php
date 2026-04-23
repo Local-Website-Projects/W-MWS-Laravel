@@ -83,61 +83,85 @@
                             <p>A Global Network Built on Social Responsibility and Certified Manufacturing Standards</p>
                         </div>
                         <!-- portfolio start -->
-                        <div class="gallery-items  min-pad lightgallery   fl-wrap  ">
+                        <div class="gallery-items min-pad lightgallery fl-wrap">
                             <!-- gallery-item-->
-                            <div class="gallery-item  web branding">
+                            <div class="gallery-item">
                                 <div class="grid-item-holder hov_zoom">
-                                    <img  src="images/folio/1.jpg"    alt="">
-                                    <a href="images/folio/1.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
+                                    <img  src="images/certificates/1.png" alt="">
                                 </div>
-                                <div class="pr-bg"></div>
-                            </div>
-                            <!-- gallery-item end-->
-                            <!-- gallery-item-->
-                            <div class="gallery-item ">
-                                <div class="grid-item-holder hov_zoom">
-                                    <img  src="images/folio/17.jpg"    alt="">
-                                    <a href="images/folio/17.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
-                                </div>
-                                <div class="pr-bg"></div>
-                            </div>
-                            <!-- gallery-item end-->
-                            <!-- gallery-item-->
-                            <div class="gallery-item gallery-item-second">
-                                <div class="grid-item-holder hov_zoom">
-                                    <img  src="images/folio/5.jpg"    alt="">
-                                    <a href="images/folio/5.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
-                                </div>
-                                <div class="pr-bg"></div>
                             </div>
                             <!-- gallery-item end-->
                             <!-- gallery-item-->
                             <div class="gallery-item">
                                 <div class="grid-item-holder hov_zoom">
-                                    <img  src="images/folio/6.jpg"    alt="">
-                                    <a href="images/folio/6.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
+                                    <img  src="images/certificates/2.png" alt="">
                                 </div>
-                                <div class="pr-bg"></div>
                             </div>
                             <!-- gallery-item end-->
                             <!-- gallery-item-->
-                            <div class="gallery-item ">
+                            <div class="gallery-item">
                                 <div class="grid-item-holder hov_zoom">
-                                    <img  src="images/folio/7.jpg"    alt="">
-                                    <a href="images/folio/7.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
+                                    <img  src="images/certificates/3.png" alt="">
                                 </div>
-                                <div class="pr-bg"></div>
                             </div>
                             <!-- gallery-item end-->
                             <!-- gallery-item-->
-                            <div class="gallery-item ">
+                            <div class="gallery-item">
                                 <div class="grid-item-holder hov_zoom">
-                                    <img  src="images/folio/8.jpg"    alt="">
-                                    <a href="images/folio/8.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
+                                    <img  src="images/certificates/4.png" alt="">
                                 </div>
-                                <div class="pr-bg"></div>
                             </div>
                             <!-- gallery-item end-->
+                            <!-- gallery-item-->
+                            <div class="gallery-item">
+                                <div class="grid-item-holder hov_zoom">
+                                    <img  src="images/certificates/5.png" alt="">
+                                </div>
+                            </div>
+                            <!-- gallery-item end-->
+                            <!-- gallery-item-->
+                            <div class="gallery-item">
+                                <div class="grid-item-holder hov_zoom">
+                                    <img  src="images/certificates/6.png" alt="">
+                                </div>
+                            </div>
+                            <!-- gallery-item end-->
+                            <!-- gallery-item-->
+                            <div class="gallery-item">
+                                <div class="grid-item-holder hov_zoom">
+                                    <img  src="images/certificates/7.png" alt="">
+                                </div>
+                            </div>
+                            <!-- gallery-item end-->
+                            <!-- gallery-item-->
+                            <div class="gallery-item">
+                                <div class="grid-item-holder hov_zoom">
+                                    <img  src="images/certificates/8.png" alt="">
+                                </div>
+                            </div>
+                            <!-- gallery-item end-->
+                            <!-- gallery-item-->
+                            <div class="gallery-item">
+                                <div class="grid-item-holder hov_zoom">
+                                    <img  src="images/certificates/9.png" alt="">
+                                </div>
+                            </div>
+                            <!-- gallery-item end-->
+                            <!-- gallery-item-->
+                            <div class="gallery-item">
+                                <div class="grid-item-holder hov_zoom">
+                                    <img  src="images/certificates/10.png" alt="">
+                                </div>
+                            </div>
+                            <!-- gallery-item end-->
+                            <!-- gallery-item-->
+                            <div class="gallery-item">
+                                <div class="grid-item-holder hov_zoom">
+                                    <img  src="images/certificates/11.png" alt="">
+                                </div>
+                            </div>
+                            <!-- gallery-item end-->
+                            
                         </div>
                         <!-- portfolio end -->
                         <div class="fl-wrap text-block">

@@ -78,12 +78,12 @@
                     <!-- gallery-item-->
                     <div class="gallery-item accessories">
                         <div class="grid-item-holder hov_zoom">
-                            <img  src="images/folio/20.jpg"    alt="">
+                            <img  src="images/folio/20.jpg" alt="">
                             <div class="grid-det">
-                                <a href="images/folio/20.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
-                                <div class="grid-det_category"><a href="#">Design  </a> <a href="#"> Branding</a></div>
+                                <a href="images/folio/20.jpg" class="grid-media-zoom image-popup"><i class="far fa-search"></i></a>
+                                <div class="grid-det_category"><a href="#">Portfolio  </a> <a href="#"> Accessories</a></div>
                                 <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Fitness Studio Website<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Bags<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -94,24 +94,10 @@
                         <div class="grid-item-holder hov_zoom">
                             <img  src="images/folio/21.jpg"    alt="">
                             <div class="grid-det">
-                                <a href="images/folio/21.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
-                                <div class="grid-det_category"><a href="#">Design  </a> <a href="#"> Branding</a></div>
+                                <a href="images/folio/21.jpg" class="grid-media-zoom image-popup"><i class="far fa-search"></i></a>
+                                <div class="grid-det_category"><a href="#">Portfolio  </a> <a href="#"> Accessories</a></div>
                                 <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Fitness Studio Website<i class="fal fa-long-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- gallery-item end-->
-                    <!-- gallery-item-->
-                    <div class="gallery-item  uides web">
-                        <div class="grid-item-holder hov_zoom">
-                            <img  src="images/folio/5.jpg"    alt="">
-                            <div class="grid-det">
-                                <a href="images/folio/5.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
-                                <div class="grid-det_category"><a href="#">Design  </a> <a href="#"> Branding</a></div>
-                                <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Kent Brant Concept<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Caps<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -122,10 +108,10 @@
                         <div class="grid-item-holder hov_zoom">
                             <img  src="images/folio/6.jpg"    alt="">
                             <div class="grid-det">
-                                <a href="images/folio/6.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
-                                <div class="grid-det_category"><a href="#">Design  </a> <a href="#"> Branding</a></div>
+                                <a href="images/folio/6.jpg" class="grid-media-zoom image-popup"><i class="far fa-search"></i></a>
+                                <div class="grid-det_category"><a href="#">Portfolio  </a> <a href="#"> Denim</a></div>
                                 <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Corporate website<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Shirts<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -137,9 +123,9 @@
                             <img  src="images/folio/7.jpg"    alt="">
                             <div class="grid-det">
                                 <a href="images/folio/7.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
-                                <div class="grid-det_category"><a href="#">Design  </a> <a href="#"> Branding</a></div>
+                                <div class="grid-det_category"><a href="#">Portfolio  </a> <a href="#"> Denim</a></div>
                                 <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Travel Agensy<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Pants<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -151,9 +137,9 @@
                             <img  src="images/folio/8.jpg"    alt="">
                             <div class="grid-det">
                                 <a href="images/folio/8.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
-                                <div class="grid-det_category"><a href="#">Design  </a> <a href="#"> Branding</a></div>
+                                <div class="grid-det_category"><a href="#">Portfolio  </a> <a href="#"> Denim</a></div>
                                 <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Sport  Agensy<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Pants<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -165,9 +151,9 @@
                             <img  src="images/folio/9.jpg"    alt="">
                             <div class="grid-det">
                                 <a href="images/folio/9.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
-                                <div class="grid-det_category"><a href="#">Design  </a> <a href="#"> UI/UX</a></div>
+                                <div class="grid-det_category"><a href="#">Portfolio  </a> <a href="#"> Sweaters</a></div>
                                 <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Barbershop Website<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Sweaters<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -179,9 +165,9 @@
                             <img  src="images/folio/10.jpg"    alt="">
                             <div class="grid-det">
                                 <a href="images/folio/10.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
-                                <div class="grid-det_category"><a href="#">Design  </a> <a href="#"> Branding</a></div>
+                                <div class="grid-det_category"><a href="#">Portfolio  </a> <a href="#"> Denim</a></div>
                                 <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Online Shop Website<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Pants<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -193,9 +179,9 @@
                             <img  src="images/folio/31.jpg"    alt="">
                             <div class="grid-det">
                                 <a href="images/folio/31.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
-                                <div class="grid-det_category"><a href="#">Design  </a> <a href="#"> Branding</a></div>
+                                <div class="grid-det_category"><a href="#">Portfolio  </a> <a href="#"> Workwear</a></div>
                                 <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Online Shop Website<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Workwear<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -207,9 +193,9 @@
                             <img  src="images/folio/32.jpg"    alt="">
                             <div class="grid-det">
                                 <a href="images/folio/32.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
-                                <div class="grid-det_category"><a href="#">Design  </a> <a href="#"> Branding</a></div>
+                                <div class="grid-det_category"><a href="#">Portfolio  </a> <a href="#"> Workwear</a></div>
                                 <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Online Shop Website<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Workwear<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -221,9 +207,9 @@
                             <img  src="images/folio/33.jpg"    alt="">
                             <div class="grid-det">
                                 <a href="images/folio/33.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
-                                <div class="grid-det_category"><a href="#">Design  </a> <a href="#"> Branding</a></div>
+                                <div class="grid-det_category"><a href="#">Portfolio  </a> <a href="#"> Workwear</a></div>
                                 <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Online Shop Website<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Workwear<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -235,65 +221,52 @@
                             <img  src="images/folio/34.jpg"    alt="">
                             <div class="grid-det">
                                 <a href="images/folio/34.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
-                                <div class="grid-det_category"><a href="#">Design  </a> <a href="#"> Branding</a></div>
+                                <div class="grid-det_category"><a href="#">Portfolio  </a> <a href="#"> Workwear</a></div>
                                 <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Online Shop Website<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Workwear<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- gallery-item end-->
                     <!-- gallery-item-->
-                    <div class="gallery-item  photography sweaters">
+                    <div class="gallery-item sweaters">
                         <div class="grid-item-holder hov_zoom">
                             <img  src="images/folio/17.jpg"    alt="">
                             <div class="grid-det">
                                 <a href="images/folio/17.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
-                                <div class="grid-det_category"><a href="#">Photography  </a> <a href="#"> Branding</a></div>
+                                <div class="grid-det_category"><a href="#">Portfolio  </a> <a href="#"> Sweaters</a></div>
                                 <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Photography Studio<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Sweaters<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- gallery-item end-->
                     <!-- gallery-item-->
-                    <div class="gallery-item  photography sweaters">
+                    <div class="gallery-item sweaters">
                         <div class="grid-item-holder hov_zoom">
                             <img  src="images/folio/13.jpg"    alt="">
                             <div class="grid-det">
                                 <a href="images/folio/13.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
-                                <div class="grid-det_category"><a href="#">Photography  </a> <a href="#"> Branding</a></div>
+                                <div class="grid-det_category"><a href="#">Portfolio  </a> <a href="#"> Sweaters</a></div>
                                 <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Photography Studio<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Sweaters<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- gallery-item end-->
-                    <!-- gallery-item-->
-                    <div class="gallery-item web branding">
-                        <div class="grid-item-holder hov_zoom">
-                            <img  src="images/folio/18.jpg"    alt="">
-                            <div class="grid-det">
-                                <a href="images/folio/18.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
-                                <div class="grid-det_category"><a href="#">Development</a> <a href="#"> Design </a></div>
-                                <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Vintage Branding<i class="fal fa-long-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- gallery-item end-->
+                
                     <!-- gallery-item-->
                     <div class="gallery-item knitewear">
                         <div class="grid-item-holder hov_zoom">
                             <img  src="images/folio/22.jpg"    alt="">
                             <div class="grid-det">
                                 <a href="images/folio/22.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
-                                <div class="grid-det_category"><a href="#">Development</a> <a href="#"> Design </a></div>
+                                <div class="grid-det_category"><a href="#">Portfolio</a> <a href="#"> Knitewear </a></div>
                                 <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Vintage Branding<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Polo T-Shirts<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -305,9 +278,9 @@
                             <img  src="images/folio/35.jpg"    alt="">
                             <div class="grid-det">
                                 <a href="images/folio/35.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
-                                <div class="grid-det_category"><a href="#">Development</a> <a href="#"> Design </a></div>
+                                <div class="grid-det_category"><a href="#">Portfolio</a> <a href="#"> Woven </a></div>
                                 <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Vintage Branding<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Kids Wear<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -319,9 +292,9 @@
                             <img  src="images/folio/36.jpg"    alt="">
                             <div class="grid-det">
                                 <a href="images/folio/36.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
-                                <div class="grid-det_category"><a href="#">Development</a> <a href="#"> Design </a></div>
+                                <div class="grid-det_category"><a href="#">Portfolio</a> <a href="#"> Woven </a></div>
                                 <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Vintage Branding<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Tops<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -333,9 +306,9 @@
                             <img  src="images/folio/37.jpg"    alt="">
                             <div class="grid-det">
                                 <a href="images/folio/37.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
-                                <div class="grid-det_category"><a href="#">Development</a> <a href="#"> Design </a></div>
+                                <div class="grid-det_category"><a href="#">Portfolio</a> <a href="#"> Woven </a></div>
                                 <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Vintage Branding<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Pants<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -347,9 +320,9 @@
                             <img  src="images/folio/38.jpg"    alt="">
                             <div class="grid-det">
                                 <a href="images/folio/38.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
-                                <div class="grid-det_category"><a href="#">Development</a> <a href="#"> Design </a></div>
+                                <div class="grid-det_category"><a href="#">Portfolio</a> <a href="#"> Woven </a></div>
                                 <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Vintage Branding<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Shirts<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -361,9 +334,9 @@
                             <img  src="images/folio/23.jpg"    alt="">
                             <div class="grid-det">
                                 <a href="images/folio/23.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
-                                <div class="grid-det_category"><a href="#">Development</a> <a href="#"> Design </a></div>
+                                <div class="grid-det_category"><a href="#">Portfolio</a> <a href="#"> Knitewear </a></div>
                                 <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Vintage Branding<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Inners<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -375,9 +348,9 @@
                             <img  src="images/folio/24.jpg"    alt="">
                             <div class="grid-det">
                                 <a href="images/folio/24.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
-                                <div class="grid-det_category"><a href="#">Development</a> <a href="#"> Design </a></div>
+                                <div class="grid-det_category"><a href="#">Portfolio</a> <a href="#"> Knitewear </a></div>
                                 <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Vintage Branding<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Hoodies<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -389,9 +362,9 @@
                             <img  src="images/folio/25.jpg"    alt="">
                             <div class="grid-det">
                                 <a href="images/folio/25.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
-                                <div class="grid-det_category"><a href="#">Development</a> <a href="#"> Design </a></div>
+                                <div class="grid-det_category"><a href="#">Portfolio</a> <a href="#"> Home Textiles</a></div>
                                 <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Vintage Branding<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Home Textiles<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -403,9 +376,9 @@
                             <img  src="images/folio/26.jpg"    alt="">
                             <div class="grid-det">
                                 <a href="images/folio/26.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
-                                <div class="grid-det_category"><a href="#">Development</a> <a href="#"> Design </a></div>
+                                <div class="grid-det_category"><a href="#">Portfolio</a> <a href="#"> Home Textiles </a></div>
                                 <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Vintage Branding<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Home Textiles<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -417,9 +390,9 @@
                             <img  src="images/folio/27.jpg"    alt="">
                             <div class="grid-det">
                                 <a href="images/folio/27.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
-                                <div class="grid-det_category"><a href="#">Development</a> <a href="#"> Design </a></div>
+                                <div class="grid-det_category"><a href="#">Portfolio</a> <a href="#"> Outerwear </a></div>
                                 <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Vintage Branding<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Overcoats<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -431,9 +404,9 @@
                             <img  src="images/folio/28.jpg"    alt="">
                             <div class="grid-det">
                                 <a href="images/folio/28.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
-                                <div class="grid-det_category"><a href="#">Development</a> <a href="#"> Design </a></div>
+                                <div class="grid-det_category"><a href="#">Portfolio</a> <a href="#"> Outerwear </a></div>
                                 <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Vintage Branding<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Jackets<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -445,9 +418,9 @@
                             <img  src="images/folio/29.jpg"    alt="">
                             <div class="grid-det">
                                 <a href="images/folio/29.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
-                                <div class="grid-det_category"><a href="#">Development</a> <a href="#"> Design </a></div>
+                                <div class="grid-det_category"><a href="#">Portfolio</a> <a href="#"> Outerwear </a></div>
                                 <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Vintage Branding<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Overcoats<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -459,9 +432,9 @@
                             <img  src="images/folio/30.jpg"    alt="">
                             <div class="grid-det">
                                 <a href="images/folio/30.jpg" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
-                                <div class="grid-det_category"><a href="#">Development</a> <a href="#"> Design </a></div>
+                                <div class="grid-det_category"><a href="#">Portfolio</a> <a href="#"> Outerwear </a></div>
                                 <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Vintage Branding<i class="fal fa-long-arrow-right"></i></a>
+                                    <a href="#" class="ajax grid-det_link">Jackets<i class="fal fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>

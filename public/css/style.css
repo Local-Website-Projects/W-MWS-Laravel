@@ -1288,7 +1288,6 @@ nav.nav-inner {
   	font-size:184px;
 }
 .clone-counter:before {
-	content:'//';
 	position:absolute;
 	bottom:50px;
 	left:100%;
