@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Chat;
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Http;
 
 Route::get('/chat-test', [Chat::class, 'index']);
@@ -22,6 +23,7 @@ Route::get('/contact', function () {return view('pages.contact');})->name('conta
 Route::get('/sustainability-&-global-reach', function () {return view('pages.sustainability');})->name('sustainability');
 Route::get('/portfolio', function () {return view('pages.portfolio');})->name('portfolio');
 Route::get('/roadmap', function () {return view('pages.roadmap');})->name('roadmap');
+Route::post('/contact',[ContactController::class,'store'])->name('contact.store');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

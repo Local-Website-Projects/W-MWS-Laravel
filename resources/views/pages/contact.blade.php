@@ -15,8 +15,11 @@
                         <h2>Contact Details</h2>
                     </div>
                     <div class="contact-details fl-wrap">
+                        @if (session('success'))
+                            <p style="color:green; font-weight:bold; max-width:250px;">{{ session('success') }}</p>
+                        @endif
                         <ul>
-                            <li><span>01. Mail :</span><a href="mailto:info@manywears.com" target="_blank">info@manywears.com</a></li>
+                            <li><span>01. Mail :</span><a href="mailto:info@manywears.com">info@manywears.com</a></li>
                             <li><span>02. Adress :</span><a href="https://maps.app.goo.gl/DKEhUXWe3qDSRthX6" target="_blank">Flat- 5A, 4th Floor, House 113, Road 17 ,<br/> Sector 14, Uttara 1230,
                                     Bangladesh</a></li>
                             <li><span>03. Phone & Whatsapp :</span><a href="#">+8801811009788</a></li>
@@ -36,18 +39,19 @@
                     </div>
                     <div id="contact-form" class="fl-wrap">
                         <div id="message"></div>
-                        <form  class="custom-form" action="#" name="contactform" id="contactform">
+                        <form  class="custom-form" action="{{route('contact.store')}}" method="post" name="contactform">
+                            @csrf
                             <fieldset>
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <input type="text" name="name" id="name" placeholder="Your Name *" value=""/>
+                                        <input type="text" name="name" id="name" placeholder="Your Name *" required/>
                                     </div>
                                     <div class="col-sm-6">
-                                        <input type="text"  name="email" id="email" placeholder="Email Address *" value=""/>
+                                        <input type="text"  name="email" id="email" placeholder="Email Address *" required/>
                                     </div>
                                 </div>
                                 <textarea name="comments"  id="comments" cols="40" rows="3" placeholder="Your Message:" class="cnt-anim"></textarea>
-                                <button class="btn fl-btn color-bg" id="submit"><span>Send Message</span> </button>
+                                <button class="btn fl-btn color-bg" type="submit"><span>Send Message</span> </button>
                             </fieldset>
                         </form>
                     </div>
@@ -55,7 +59,8 @@
             </div>
         </div>
         <div class="map-container">
-            <div id="map-single" class="map" data-latlog="[23.8694 , 90.39226]" data-popuptext="My Location in New York ."></div>
+            <div id="map-single" class="map" data-latlog="[23.8694 , 90.39226]" data-popuptext="Flat- 5A, 4th Floor, House 113, Road 17 ,
+Sector 14, Uttara 1230, Bangladesh"></div>
         </div>
         <div class="main_social">
             <span class="main-social-title">Find on:</span>
