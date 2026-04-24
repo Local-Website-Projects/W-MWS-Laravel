@@ -12,6 +12,7 @@ class Lead extends Model
     protected $fillable = [
         'name',
         'email',
+        'session_id'
     ];
 }
 

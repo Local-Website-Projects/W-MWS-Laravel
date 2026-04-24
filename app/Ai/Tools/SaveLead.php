@@ -17,11 +17,11 @@ class SaveLead implements Tool
 
     public function description(): string
     {
-        return 'Saves the customer name and email to our database for a merchandiser follow-up.';
+        return 'Saves the customer name, email, and session ID to our database for a merchandiser follow-up.';
     }
 
     /**
-     * Define the tool input schema for the AI provider.
+     * Define the tool input schema.
      */ 
     public function schema(JsonSchema $schema): array
     {
@@ -33,6 +33,11 @@ class SaveLead implements Tool
             'email' => $schema->string()
                 ->required()
                 ->description('Email address of the customer lead.'),
+            
+            // Add session_id to the schema so the AI knows to include it
+            'session_id' => $schema->string()
+                ->required()
+                ->description('The unique session ID from the current chat thread.'),
         ];
     }
 
@@ -43,12 +48,20 @@ class SaveLead implements Tool
     {
         $name = $request['name'] ?? null;
         $email = $request['email'] ?? null;
+        $sessionId = $request['session_id'] ?? null;
 
-        if (! $name || ! $email) {
-            return 'Missing name or email. Lead was not saved.';
+        if (! $name || ! $email || ! $sessionId) {
+            return 'Missing name, email, or session ID. Lead was not saved.';
         }
 
-        Lead::updateOrCreate(['email' => $email], ['name' => $name]);
+        // Update or create with the session_id
+        Lead::updateOrCreate(
+            ['email' => $email], 
+            [
+                'name' => $name,
+                'session_id' => $sessionId
+            ]
+        );
 
         return 'Lead saved successfully. A merchandiser will contact you soon.';
     }
