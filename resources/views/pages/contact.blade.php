@@ -50,7 +50,7 @@
                                         <input type="text"  name="email" id="email" placeholder="Email Address *" required/>
                                     </div>
                                 </div>
-                                <textarea name="comments"  id="comments" cols="40" rows="3" placeholder="Your Message:" class="cnt-anim"></textarea>
+                                <textarea name="message"  id="comments" cols="40" rows="3" placeholder="Your Message:" class="cnt-anim"></textarea>
                                 <button class="btn fl-btn color-bg" type="submit"><span>Send Message</span> </button>
                             </fieldset>
                         </form>
