@@ -296,7 +296,7 @@
                             <div class="col-sm-7">
                                 <div class="main-about fl-wrap">
                                     <h2>Innovative solutions to boost <br><span> your creative </span>  projects</h2>
-                                    <p>At Many Wear Sourcing (MWS), we believe we are more than just a buying house; we are your strategic manufacturing partner. Based in the heart of Dhaka, we provide end-to-end supply chain solutions—from initial fabric innovation and tech-pack development to the final shipment. We take pride in ensuring your brand's unique vision is executed with technical precision.</p>
+                                    <p>At (MWS), we believe we are more than just a buying house; we are your strategic manufacturing partner. Based in the heart of Dhaka, we provide end-to-end supply chain solutions—from initial fabric innovation and tech-pack development to the final shipment. We take pride in ensuring your brand's unique vision is executed with technical precision.</p>
                                     <p> Real-World Impact</p>
                                     <div class="facts-container fl-wrap">
                                         <!-- inline-facts -->

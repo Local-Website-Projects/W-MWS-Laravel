@@ -26,7 +26,7 @@
         <div id="chat-box" class="flex-1 p-6 overflow-y-auto space-y-4 bg-slate-50">
             <div class="flex justify-start">
                 <div class="bg-blue-600 text-white p-3 rounded-2xl rounded-tl-none max-w-[80%] text-sm shadow-sm">
-                    Hello! I am the Many Wear Sourcing assistant. How can I help you today?
+                    Hello! I am the MWS assistant. How can I help you today?
                 </div>
             </div>
         </div>

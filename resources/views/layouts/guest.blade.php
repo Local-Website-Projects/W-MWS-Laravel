@@ -83,7 +83,7 @@
         <div id="chat-box" class="mws-chat-body">
             <div class="mws-msg mws-incoming">
                 <div class="mws-bubble">
-                    Hello! How can I assist you with Many Wear Sourcing today?
+                    Hello! How can I assist you with MWS today?
                 </div>
             </div>
         </div>
