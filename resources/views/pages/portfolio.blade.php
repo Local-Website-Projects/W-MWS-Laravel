@@ -6,20 +6,29 @@
 
 @section('description', '')
 
+@push('styles')
+<style>
+    .hero-section-dec.color-bg{
+        display:none;
+    }
+</style>
+@endpush
+
 @section('content')
+
     <div class="content" data-pagetitle="Portfolio">
         <div class="fixed-bottom-panel">
             <div class="gallery-filters-wrap">
                 <div class="gallery-filters init_hidden_filter">
                     <a href="#" class="gallery-filter  gallery-filter-active" data-filter="*">All products</a>
-                    <a href="#" class="gallery-filter" data-filter=".accessories">Accessories</a>
-                    <a href="#" class="gallery-filter" data-filter=".denim">Denim</a>
-                    <a href="#" class="gallery-filter" data-filter=".home-textiles">Home Textiles</a>
                     <a href="#" class="gallery-filter" data-filter=".knitewear">Knitewear</a>
-                    <a href="#" class="gallery-filter" data-filter=".outerwear">Outerwear</a>
-                    <a href="#" class="gallery-filter" data-filter=".sweaters">Sweaters</a>
-                    <a href="#" class="gallery-filter" data-filter=".workwear">Workwear</a>
                     <a href="#" class="gallery-filter" data-filter=".woven">Woven</a>
+                    <a href="#" class="gallery-filter" data-filter=".denim">Denim</a>
+                    <a href="#" class="gallery-filter" data-filter=".sweaters">Sweaters</a>
+                    <a href="#" class="gallery-filter" data-filter=".outerwear">Outerwear</a>
+                    <a href="#" class="gallery-filter" data-filter=".workwear">Workwear</a>
+                    <a href="#" class="gallery-filter" data-filter=".home-textiles">Home Textiles</a>
+                    <a href="#" class="gallery-filter" data-filter=".accessories">Accessories</a>   
                 </div>
                 <div class="psn_button act-filter"><i class="fal fa-sort"></i> FIlter </div>
             </div>
@@ -132,7 +141,7 @@
                     </div>
                     <!-- gallery-item end-->
                     <!-- gallery-item-->
-                    <div class="gallery-item denim knitewear">
+                    <div class="gallery-item denim">
                         <div class="grid-item-holder hov_zoom">
                             <img  src="images/folio/8.webp"    alt="">
                             <div class="grid-det">
@@ -159,20 +168,7 @@
                         </div>
                     </div>
                     <!-- gallery-item end-->
-                    <!-- gallery-item-->
-                    <div class="gallery-item denim">
-                        <div class="grid-item-holder hov_zoom">
-                            <img  src="images/folio/10.webp"    alt="">
-                            <div class="grid-det">
-                                <a href="images/folio/10.webp" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
-                                <div class="grid-det_category"><a href="#">Portfolio  </a> <a href="#"> Denim</a></div>
-                                <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Pants<i class="fal fa-long-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- gallery-item end-->
+                    
                     <!-- gallery-item-->
                     <div class="gallery-item workwear">
                         <div class="grid-item-holder hov_zoom">
@@ -370,34 +366,7 @@
                         </div>
                     </div>
                     <!-- gallery-item end-->
-                    <!-- gallery-item-->
-                    <div class="gallery-item outerwear">
-                        <div class="grid-item-holder hov_zoom">
-                            <img  src="images/folio/27.webp"    alt="">
-                            <div class="grid-det">
-                                <a href="images/folio/27.webp" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
-                                <div class="grid-det_category"><a href="#">Portfolio</a> <a href="#"> Outerwear </a></div>
-                                <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Overcoats<i class="fal fa-long-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- gallery-item end-->
-                    <!-- gallery-item-->
-                    <div class="gallery-item outerwear">
-                        <div class="grid-item-holder hov_zoom">
-                            <img  src="images/folio/28.webp"    alt="">
-                            <div class="grid-det">
-                                <a href="images/folio/28.webp" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
-                                <div class="grid-det_category"><a href="#">Portfolio</a> <a href="#"> Outerwear </a></div>
-                                <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Jackets<i class="fal fa-long-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- gallery-item end-->
+                    
                     <!-- gallery-item-->
                     <div class="gallery-item outerwear">
                         <div class="grid-item-holder hov_zoom">

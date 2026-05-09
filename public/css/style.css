@@ -904,7 +904,7 @@ nav.nav-inner {
 	line-height: 40px;
 	position: relative;
 	font-weight: 500;
-	font-size: 12px;
+	font-size: 11px;
 	text-align: left;
 	color:#fff;
 	text-transform: uppercase;
@@ -4896,12 +4896,13 @@ section.parallax-section .bg {
     bottom: 250px;
 }
 }
-@media only screen and (max-width: 1360px) {
+@media only screen and (max-width: 992px) {
 .header-contacts ul{
 	display:none;
 }
 .contacts-btn {
 	display:block;
+	margin-top: 10px;
 }
 .gallery-items_fs .gallery-item , .gallery-items_fs .gallery-item.gallery-item-second {
 	width:33.3%;
@@ -5114,14 +5115,31 @@ section.parallax-section .bg {
 }
 }
 @media only screen and (max-width: 764px) {
-.fix-pr-det-dec , .fix-pr-det-dec2 , .closedet_style  , .show-details.sd_btn2 , .hero-decor-numb , .hero-corner-dec2 , .hero-conatiner .slider-progress-bar , .contacts-btn , .hc_dec , .hsc_pp  , .hero-corner-dec , .hero_entry:before  , .hero-facts-wrap , .hero_entry:after , .fhhw:before , .fhhw:after , .fcc_column  , .hor-scroll-idicator , .fixed-bottom-panel.fs-fix-bom-panel.fbp_single-car , .next-project-swiper-link{
+.fix-pr-det-dec , .fix-pr-det-dec2 , .closedet_style  , .show-details.sd_btn2 , .hero-decor-numb , .hero-corner-dec2 , .hero-conatiner .slider-progress-bar , .hc_dec , .hsc_pp  , .hero-corner-dec , .hero_entry:before  , .hero-facts-wrap , .hero_entry:after , .fhhw:before , .fhhw:after , .fcc_column  , .hor-scroll-idicator , .fixed-bottom-panel.fs-fix-bom-panel.fbp_single-car , .next-project-swiper-link{
 	display:none;
 }
 
-    .clone-counter{
-        bottom: 50px;
-        left: 30px !important;
-    }
+.header-contacts {
+	right: 0;
+}
+
+.clone-counter{
+    bottom: 50px;
+    left: 30px !important;
+}
+
+.contacts-btn {
+	margin-top: 8px;
+}
+
+.header-contacts li, .contacts-btn{
+	margin-right: 30px;
+}
+
+.logo-holder img {
+    margin-top: 0;
+	margin-left: -45px;
+}
 .fix-pr-det {
 	float:left;
     position: relative;
@@ -5356,13 +5374,14 @@ section.parallax-section .bg {
 .share-btn {
     width: 80px;
 	text-align: center;
+	display: none;
 }
 .share-btn span {
 	left: 0;
 	width:100%;
 }
 .nav-button, .main-header:before {
-    right: 80px;
+    right: 0;
 }
  .nh_vis {
     right: 0;

@@ -19,6 +19,8 @@
         <link type="text/css" rel="stylesheet" href="{{asset('css/chat.css')}}">
         <!--=============== favicons ===============-->
         <link rel="shortcut icon" href="{{asset('images/favicon.png')}}">
+        @stack('styles')
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
     <body>
 
@@ -57,12 +59,6 @@
             <div class="share-container fl-wrap  isShare"></div>
         </div>
         <!-- share-wrapper  end -->
-
-        <!-- cursor-->
-        <div class="element">
-            <div class="element-item"></div>
-        </div>
-        <!-- cursor end-->
     </div>
 
     <button id="mws-chat-trigger" class="mws-chat-btn">

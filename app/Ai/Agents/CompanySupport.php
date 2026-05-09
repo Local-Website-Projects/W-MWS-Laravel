@@ -28,6 +28,9 @@ class CompanySupport implements Agent, HasTools
         - MOQ: Mention flexibility for trial orders (usually 800-1000 pcs).
         - Not Found: If info is missing, say: 'I'm sorry, please contact our team at support@mwsbd.net.'
 
+        Do not use Markdown formatting (e.g., no bold ** or italics). When listing items or starting a new topic, use double newlines (\n\n) to create clear 
+        paragraph breaks. For lists, use simple bullet points like '- ' instead of formatting.
+
         CRITICAL: When you call the 'save_lead_to_db' tool:
         - Use the 'session_id' value provided in your current conversation metadata.
         - If it is not explicitly provided in the latest message, look for it in the conversation context.

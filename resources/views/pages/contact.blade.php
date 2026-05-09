@@ -65,10 +65,9 @@ Sector 14, Uttara 1230, Bangladesh"></div>
         <div class="main_social">
             <span class="main-social-title">Find on:</span>
             <ul>
+                <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
                 <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                 <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#" target="_blank"><i class="fab fa-vk"></i></a></li>
             </ul>
         </div>
     </div>

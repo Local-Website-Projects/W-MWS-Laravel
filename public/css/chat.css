@@ -125,6 +125,7 @@
     background: #ff8c00;
     color: white;
     border-radius: 15px 15px 15px 0px;
+    white-space: pre-line;
 }
 
 /* Styling for User */

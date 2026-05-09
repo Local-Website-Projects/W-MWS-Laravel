@@ -7,186 +7,81 @@
 @section('description', '')
 
 @section('content')
-    <style>
-        .num.plus::after {
-            content: "+";
-            display: inline-block;
-            margin-left: 2px; /* Adds a tiny bit of breathing room */
-            vertical-align: middle; /* Aligns it nicely with the numbers */
-        }
-        .aql::after {
-            content: "/2.5"; /* This adds the static part */
-            font-weight: bold;
-            opacity: 1; /* Optional: makes the second number slightly subtle */
-            margin-left: 2px;
-        }
-        .num.percent-sign::after {
-            content: "%";
-            margin-left: 1px;
-            font-weight: inherit; /* Matches the boldness of the number */
-        }
+<style>
+   /* Scoped container to match your theme's width */
+   .roadmap-timeline-wrapper {
+        background: #14142F;
+        margin-top: 40px;
+        padding: 180px 0 60px 0;
+        width: 100%;
+        min-height: 550px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 25px;
+        background-size: cover;
+        background-position: center;
+        transition: background-image 0.6s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-        .sociales {
-                text-align: center;
-                margin-bottom: 20px;
-            }
+    .slider {
+        position: relative;
+        width: 100%;
+        height: 380px;
+    }
 
-            #timeline {
-                width: 500px;
-                height: 600px;
-                overflow: hidden;
-                margin: 40px auto;
-                position: relative;
-                background: url('https://www.csslab.cl/ejemplos/timelinr/latest/images/dot.gif') 3px top repeat-y;
-            }
+    .slide {
+        display: block;
+        width: 350px;
+        height: 200px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -190px; /* Center-point adjustment */
+        backface-visibility: hidden;
+        transition: all 0.5s cubic-bezier(0.2, 0, 0.2, 1);
+        color: white;
+        border-radius: 20px;
+        cursor: pointer;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background-color: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+    }
 
-            #dates {
-                width: 100px;
-                height: 600px;
-                overflow: hidden;
-                float: left;
-            }
+    .slide.active {
+        z-index: 50 !important;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+    }
 
-            #datesScroller,
-            #issuesScroller {
-                position: relative;
-                margin: 0;
-                padding: 0;
-                transition: transform 0.5s ease-in-out;
-            }
+    .slide-container {
+        padding: 30px;
+        background: linear-gradient(to bottom, rgb(0 0 0 / 50%) 0%, rgb(0 0 0 / 70%) 100%);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
-            #dates li {
-                list-style: none;
-                width: 100px;
-                height: 100px;
-                line-height: 100px;
-                font-size: 24px;
-                padding-left: 10px;
-                background: url('https://www.csslab.cl/ejemplos/timelinr/latest/images/biggerdot.png') left center no-repeat;
-            }
+    .slide-Title {
+        font-size: 20px !important;
+        margin-bottom: 10px !important;
+        color: #fff !important;
+    }
 
-            #dates a {
-                line-height: 38px;
-                padding-bottom: 10px;
-            }
-
-            #dates .selected {
-                font-size: 38px;
-                color: #ff8c00;
-            }
-
-            #issues {
-                width: 400px;
-                height: 600px;
-                overflow: hidden;
-                float: left;
-            }
-
-            /* Each issue is 600px tall; we scroll by translating the inner scroller */
-            #issues li {
-                max-width: 300px;
-                /* width: 400px; */
-                height: 600px;
-                list-style: none;
-                text-align: center;
-                /* add */
-
-            }
-
-            #issues li.selected img {
-                -webkit-transform: scale(1.1, 1.1);
-                -moz-transform: scale(1.1, 1.1);
-                -o-transform: scale(1.1, 1.1);
-                -ms-transform: scale(1.1, 1.1);
-                transform: scale(1.1, 1.1);
-            }
-
-            #issues li img {
-                /* float: left; */
-                width: 200px;
-                /* add */
-                margin: 10px 30px 10px 50px;
-                -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)";
-                /* IE 8 */
-                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF, endColorstr=#00FFFFFF);
-                /* IE 6 & 7 */
-                zoom: 1;
-                -webkit-transition: all 2s ease-in-out;
-                -moz-transition: all 2s ease-in-out;
-                -o-transition: all 2s ease-in-out;
-                -ms-transition: all 2s ease-in-out;
-                transition: all 2s ease-in-out;
-                -webkit-transform: scale(0.7, 0.7);
-                -moz-transform: scale(0.7, 0.7);
-                -o-transform: scale(0.7, 0.7);
-                -ms-transform: scale(0.7, 0.7);
-                transform: scale(0.7, 0.7);
-            }
-
-            #issues li h1 {
-                color: #ff8c00;
-                font-size: 38px;
-                text-align: center;
-                /* text-shadow: #000 1px 1px 2px; */
-                font-weight: bold;
-            }
-
-            #issues li p {
-                font-size: 14px;
-                margin: 10px 20px;
-                font-weight: 500;
-                line-height: 22px;
-            }
-
-            #grad_top,
-            #grad_bottom {
-                width: 500px;
-                height: 80px;
-                position: absolute;
-            }
-
-            #grad_top {
-                top: 0;
-            }
-
-            #grad_bottom {
-                bottom: 0;
-            }
-
-            #next,
-            #prev {
-                position: absolute;
-                left: 45%;
-                /* left: 55%; */
-                font-size: 70px;
-                width: 38px;
-                height: 22px;
-                background-position: 0 -44px;
-                background-repeat: no-repeat;
-                text-indent: -9999px;
-                overflow: hidden;
-            }
-
-            #next:hover,
-            #prev:hover {
-                background-position: 0 0;
-            }
-
-            #next {
-                bottom: 0;
-                background-image: url('https://www.csslab.cl/ejemplos/timelinr/latest/images/next_v.png');
-            }
-
-            #prev {
-                top: 0;
-                background-image: url('https://www.csslab.cl/ejemplos/timelinr/latest/images/prev_v.png');
-            }
-
-            #next.disabled,
-            #prev.disabled {
-                opacity: 0.2;
-            }
-    </style>
+    .slide-description ul li {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px !important;
+        line-height: 1.3 !important;
+        color: rgba(255, 255, 255, 0.9);
+        text-align: justify;
+        font-weight: 300;
+    }
+</style>
 
     <!-- content-->
     <div class="content"  data-pagetitle="about us">
@@ -278,10 +173,10 @@
         <!--column-wrap-->
         <div class="column-wrap">
             <!--column-wrap-container -->
-            <div class="column-wrap-container fl-wrap">
+            <div class="column-wrap-container fl-wrap" style="max-width=1200px !important">
                 <div class="col-wc_dec"></div>
                 <section class="scroll_sec" id="sec1">
-                    <div class="container">
+                    <div class="container" style="max-width=1200px !important"> 
                         <div class="section-title">
                             <h3>Some   Words About MWS  </h3>
                             <p>Your Eyes and Ears on the Ground in Bangladesh</p>
@@ -296,7 +191,7 @@
                             <div class="col-sm-7">
                                 <div class="main-about fl-wrap">
                                     <h2>Innovative solutions to boost <br><span> your creative </span>  projects</h2>
-                                    <p>At (MWS), we believe we are more than just a buying house; we are your strategic manufacturing partner. Based in the heart of Dhaka, we provide end-to-end supply chain solutions—from initial fabric innovation and tech-pack development to the final shipment. We take pride in ensuring your brand's unique vision is executed with technical precision.</p>
+                                    <p>At MWS, we believe we are more than just a buying house; we are your strategic manufacturing partner. Based in the heart of Dhaka, we provide end-to-end supply chain solutions—from initial fabric innovation and tech-pack development to the final shipment. We take pride in ensuring your brand's unique vision is executed with technical precision.</p>
                                     <p> Real-World Impact</p>
                                     <div class="facts-container fl-wrap">
                                         <!-- inline-facts -->
@@ -473,69 +368,61 @@
                 <!--section end-->
                 <div class="section-separator fl-wrap"><span></span></div>
                 <!--section  -->
-                <section class="scroll_sec" style="padding: 80px 0 0 0;" id="sec3">
+                <section class="scroll_sec" id="sec3">
                     <div class="container">
                         <div class="section-title">
                             <h3>Our 5-Step Excellence Roadmap</h3>
                             <p>A Proven Framework for Turning Concepts into Containers with Speed and Technical Precision</p>
                         </div>
-                        <div id="timeline">
-                            <div id="dates">
-                                <ul id="datesScroller">
-                                    <li><a href="#step1" class="selected">1</a></li>
-                                    <li><a href="#step2">2</a></li>
-                                    <li><a href="#step3">3</a></li>
-                                    <li><a href="#step4">4</a></li>
-                                    <li><a href="#step5">5</a></li>
-                                </ul>
+                
+                        <div class="roadmap-timeline-wrapper">
+                            <div class="slider">
+                                <div class="slide" data-bg="{{ asset('images/steps/1.jpg') }}">
+                                    <div class="slide-container">
+                                        <h2 class="slide-Title">1 - Inquiry & Costing</h2>
+                                        <div class="slide-description">
+                                            <ul><li>We prioritize speed to keep your business moving by providing a rapid price analysis within 24 hours. Our team performs a strategic factory selection from our vetted network to ensure your project aligns with the best cost-to-quality ratio.</li></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="slide" data-bg="{{ asset('images/steps/2.jpg') }}">
+                                    <div class="slide-container">
+                                        <h2 class="slide-Title">2 - Sampling & PD</h2>
+                                        <div class="slide-description">
+                                            <ul><li>We transform your vision into physical reality through rapid prototyping and tech-pack development. Within just 7 days, we deliver high-quality physical prototypes and lab dips, ensuring your design is technically precise before mass production begins.</li></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="slide active" data-bg="{{ asset('images/steps/3.jpg') }}">
+                                    <div class="slide-container">
+                                        <h2 class="slide-Title">3 - Order Execution</h2>
+                                        <div class="slide-description">
+                                            <ul><li>Once production starts, we maintain a strict 60-day timeline to ensure your collection moves from concept to container in record time. This phase involves rigorous monitoring of every manufacturing stage, including yarn sourcing, knitting, and dyeing.</li></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="slide" data-bg="{{ asset('images/steps/4.jpg') }}">
+                                    <div class="slide-container">
+                                        <h2 class="slide-Title">4 - Quality Gate</h2>
+                                        <div class="slide-description">
+                                            <ul><li>Our "3-Gate" defense protocol provides total peace of mind through a zero-defect supply chain. We conduct multi-stage inline inspections and a final statistical audit to AQL 1.5/2.5 standards to verify that every item is retail-ready.</li></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="slide" data-bg="{{ asset('images/steps/5.png') }}">
+                                    <div class="slide-container">
+                                        <h2 class="slide-Title">5 - Logistics</h2>
+                                        <div class="slide-description">
+                                            <ul><li>We guarantee a seamless export experience by managing all documentation and complex logistics requirements. Our commitment to 100% on-time shipments ensures reliable global delivery to your warehouses across the UK, EU, USA, and beyond.</li></ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-
-                            <div id="issues">
-                                <ul id="issuesScroller">
-                                    <li id="step1" class="selected">
-                                        <img src="{{ asset('images/steps/Inquiry-and-costing-24-hours.webp') }}" />
-                                        <h1>Inquiry &amp; Costing (24 Hours)</h1>
-                                        <p>We prioritize speed to keep your business moving by providing a rapid price analysis within 24 hours. Our team performs a strategic factory selection from our vetted network to ensure your project aligns with the best cost-to-quality ratio.</p>
-                                    </li>
-                                    <li id="step2">
-                                        <img src="{{ asset('images/steps/factory-sampling-and-pd.webp') }}" />
-                                        <h1>Sampling &amp; PD (7 Days)</h1>
-                                        <p>We transform your vision into physical reality through rapid prototyping and tech-pack development. Within just 7 days, we deliver high-quality physical prototypes and lab dips, ensuring your design is technically precise before mass production begins.</p>
-                                    </li>
-                                    <li id="step3">
-                                        <img src="{{ asset('images/steps/Order-execution.webp') }}" />
-                                        <h1>Order Execution (60 Days)</h1>
-                                        <p>Once production starts, we maintain a strict 60-day timeline to ensure your collection moves from concept to container in record time. This phase involves rigorous monitoring of every manufacturing stage, including yarn sourcing, knitting, and dyeing.</p>
-                                    </li>
-                                    <li id="step4">
-                                        <img src="{{ asset('images/steps/Quality-gate.webp') }}" />
-                                        <h1>Quality Gate (100%)</h1>
-                                        <p>Our &quot;3-Gate&quot; defense protocol provides total peace of mind through a zero-defect supply chain. We conduct multi-stage inline inspections and a final statistical audit to AQL 1.5/2.5 standards to verify that every item is retail-ready.</p>
-                                    </li>
-                                    <li id="step5">
-                                        <img src="{{ asset('images/steps/Logistics.webp') }}" />
-                                        <h1>Logistics (100%)</h1>
-                                        <p>We guarantee a seamless export experience by managing all documentation and complex logistics requirements. Our commitment to 100% on-time shipments ensures reliable global delivery to your warehouses across the UK, EU, USA, and beyond.</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div id="grad_top"></div>
-                            <div id="grad_bottom"></div>
-                            <a href="#" id="next">+</a>
-                            <a href="#" id="prev" style="margin-bottom: 20px;">-</a>
                         </div>
-
-
-                        <!-- client-list -->
-                        {{--<div class="fl-wrap client-list">
-                            <ul class="">
-                                <li><a href="#" target="_blank"><img src="images/clients/4.png" alt=""></a></li>
-                                <li><a href="#" target="_blank"><img src="images/clients/2.png" alt=""></a></li>
-                                <li><a href="#" target="_blank"><img src="images/clients/4.png" alt=""></a></li>
-                                <li><a href="#" target="_blank"><img src="images/clients/2.png" alt=""></a></li>
-                            </ul>
-                            <!-- client-list end-->
-                        </div>--}}
                     </div>
                     <div class="section-number"> <span>0</span>3. </div>
                 </section>
@@ -574,99 +461,90 @@
             });
         });
 
+        var RoadmapSlider = function() {
+    var $slides, $wrapper, sliderWidth, increment = 180;
 
-        (function () {
-                const datesScroller = document.getElementById('datesScroller');
-                const issuesScroller = document.getElementById('issuesScroller');
-                const dateLinks = Array.from(datesScroller.querySelectorAll('a'));
-                const issueItems = Array.from(issuesScroller.querySelectorAll('li'));
+    var updateVisuals = function() {
+        var $active = $('.slide.active');
+        var bg = $active.attr('data-bg');
+        
+        if (bg) {
+            // Apply background ONLY to the roadmap section
+            $('.roadmap-timeline-wrapper').css({
+                'background-image': 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(' + bg + ')'
+            });
 
-                const nextBtn = document.getElementById('next');
-                const prevBtn = document.getElementById('prev');
+            // Update card background
+            $('.slide').not('.active').css('background-image', 'none');
+            $active.css({
+                'background-image': 'url(' + bg + ')',
+                'background-size': 'cover',
+                'background-position': 'center'
+            });
+        }
+    };
 
-                // Map date href (e.g. "#1900") to the corresponding index.
-                const idToIndex = new Map();
-                dateLinks.forEach((a, idx) => {
-                    const href = a.getAttribute('href') || '';
-                    const id = href.startsWith('#') ? href.slice(1) : href;
-                    if (id) idToIndex.set(id, idx);
-                });
+    var position = function() {
+        var activeIndex = $('.slide.active').index();
+        var total = $slides.length;
 
-                // Each date row is 100px tall and each issue panel is 600px tall (from CSS).
-                const DATE_ROW_HEIGHT = 100;
-                const ISSUE_HEIGHT = 600;
+        $slides.each(function(index) {
+            var x = 0, z = 0, opacity = 0, zindex = 0, scale = 1;
+            
+            if (index < activeIndex) {
+                // Left Slides
+                x = -increment * (activeIndex - index);
+                z = -200 * (activeIndex - index);
+                scale = 0.8;
+                opacity = 0.6;
+                zindex = index;
+            } else if (index > activeIndex) {
+                // Right Slides
+                x = increment * (index - activeIndex);
+                z = -200 * (index - activeIndex);
+                scale = 0.8;
+                opacity = 0.6;
+                zindex = total - index;
+            } else {
+                // Active Slide
+                x = 0;
+                z = 0;
+                scale = 1.1;
+                opacity = 1;
+                zindex = 100;
+            }
 
-                const datesWindowHeight = document.getElementById('dates').clientHeight || 600;
-                const VISIBLE_DATE_COUNT = Math.max(1, Math.floor(datesWindowHeight / DATE_ROW_HEIGHT));
+            $(this).css({
+                'transform': 'translateX('+x+'px) translateZ('+z+'px) scale('+scale+')',
+                'z-index': zindex,
+                'opacity': opacity
+            });
+        });
+    };
 
-                let currentIndex = Math.max(0, dateLinks.findIndex(a => a.classList.contains('selected')));
+    return {
+        init: function() {
+            $slides = $('.slide');
+            $wrapper = $('.roadmap-timeline-wrapper');
+            if(!$wrapper.length) return;
 
-                function setArrowState() {
-                    const isFirst = currentIndex <= 0;
-                    const isLast = currentIndex >= dateLinks.length - 1;
+            $(document).on('click', '.slide', function() {
+                $('.slide').removeClass('active');
+                $(this).addClass('active');
+                position();
+                updateVisuals();
+            });
 
-                    if (prevBtn) {
-                        prevBtn.classList.toggle('disabled', isFirst);
-                        prevBtn.setAttribute('aria-disabled', String(isFirst));
-                    }
-                    if (nextBtn) {
-                        nextBtn.classList.toggle('disabled', isLast);
-                        nextBtn.setAttribute('aria-disabled', String(isLast));
-                    }
-                }
+            position();
+            updateVisuals();
+        }
+    };
+}();
 
-                function setSelectedIndex(nextIndex, { animate } = { animate: true }) {
-                    const idx = Math.max(0, Math.min(dateLinks.length - 1, nextIndex));
-                    currentIndex = idx;
-
-                    // Selected classes (used by your CSS rules).
-                    dateLinks.forEach(a => a.classList.remove('selected'));
-                    issueItems.forEach(li => li.classList.remove('selected'));
-
-                    dateLinks[idx].classList.add('selected');
-                    issueItems[idx].classList.add('selected');
-
-                    // Scroll date window: keep the selected item within the visible block.
-                    const maxStart = Math.max(0, dateLinks.length - VISIBLE_DATE_COUNT);
-                    const startIndex = Math.min(maxStart, Math.max(0, idx - (VISIBLE_DATE_COUNT - 1)));
-
-                    datesScroller.style.transition = animate ? '' : 'none';
-                    issuesScroller.style.transition = animate ? '' : 'none';
-
-                    datesScroller.style.transform = 'translateY(' + (-startIndex * DATE_ROW_HEIGHT) + 'px)';
-                    issuesScroller.style.transform = 'translateY(' + (-idx * ISSUE_HEIGHT) + 'px)';
-
-                    setArrowState();
-                }
-
-                // Click on dates to jump.
-                dateLinks.forEach((a, idx) => {
-                    a.addEventListener('click', (e) => {
-                        e.preventDefault();
-                        setSelectedIndex(idx, { animate: true });
-                    });
-                });
-
-                // Bottom + and top - navigation.
-                if (nextBtn) {
-                    nextBtn.addEventListener('click', (e) => {
-                        e.preventDefault();
-                        if (nextBtn.classList.contains('disabled')) return;
-                        setSelectedIndex(currentIndex + 1, { animate: true });
-                    });
-                }
-
-                if (prevBtn) {
-                    prevBtn.addEventListener('click', (e) => {
-                        e.preventDefault();
-                        if (prevBtn.classList.contains('disabled')) return;
-                        setSelectedIndex(currentIndex - 1, { animate: true });
-                    });
-                }
-
-                // Initial positioning: show years up to 1977 in the window.
-                setSelectedIndex(currentIndex, { animate: false });
-                setArrowState();
-            })();
+$(document).ready(function() {
+    RoadmapSlider.init();
+});
     </script>
+
+    
 @endsection
