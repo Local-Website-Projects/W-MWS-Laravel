@@ -7,6 +7,13 @@
 @section('description', '')
 
 @section('content')
+<style>
+    @media screen and (max-width: 768px){
+    .content-front:before{
+        display: none;
+    }
+}
+</style>
     <div class="content full-height no-mob-hidden2" data-pagetitle="contact">
         <div class="content-inner">
             <div class="content-front">
@@ -20,9 +27,12 @@
                         @endif
                         <ul>
                             <li><span>01. Mail :</span><a href="mailto:info@manywears.com">info@manywears.com</a></li>
-                            <li><span>02. Adress :</span><a href="https://maps.app.goo.gl/DKEhUXWe3qDSRthX6" target="_blank">Flat- 5A, 4th Floor, House 113, Road 17 ,<br/> Sector 14, Uttara 1230,
+                            <li><span>02. Adress :</span>
+                                <a href="https://maps.app.goo.gl/DKEhUXWe3qDSRthX6" target="_blank">Flat- 5A, 4th Floor, House 113, Road 17 ,<br/> Sector 14, Uttara 1230,
                                     Bangladesh</a></li>
-                            <li><span>03. Phone & Whatsapp :</span><a href="#">+8801811009788</a></li>
+                            <li><span>China:</span><a href="https://maps.app.goo.gl/KnzQsy5wWfjJmLmN9" target="_blank">609, diamond mansion, no. 1227 Jinkeqiao <br/> Avenue, Keqiao, Shaoxing, Zhejiang, <br/>China-312030</a></li>
+                            <li><span>UK :</span><a href="https://maps.app.goo.gl/aipdGo2sskjYSpCh9" target="_blank">15 Waterside Cl, Birmingham B9 4QJ</a></li>
+                            <li><span>03. Phone & Whatsapp :</span><a href="https://wa.me/+8801811009788">+8801811009788</a></li>
                         </ul>
                     </div>
                     <a href="#" class="btn fl-btn color-bg show_contact-form"><span>Say Hello</span></a>

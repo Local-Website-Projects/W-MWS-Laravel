@@ -2277,7 +2277,7 @@ section.parallax-section .bg {
 }
 .gallery-item,
 .grid-sizer {
-	width: 33.3%;
+	width: 25%;
 	position: relative;
 	float: left;
 	overflow: hidden;
@@ -3591,17 +3591,23 @@ section.parallax-section .bg {
 	z-index:1;
 	margin-bottom:50px;
 }
-.process-details  {
-	text-align: left;
-	float: left;
-	width: 100%;
-	padding: 50px 60px 70px 60px;
-	background: #313131;
-	margin-bottom:25px;
-	overflow:hidden;
-	position: relative;
-	z-index:2;
+.process-details {
+    text-align: left;
+    float: left;
+    width: 100%;
+    padding: 50px 60px 70px 60px;
+    background: #313131;
+    margin-bottom: 25px;
+    overflow: hidden;
+    position: relative;
+    /* Removed z-index from here to keep it simple */
+    height: 268px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff; /* Ensure text is visible */
 }
+
 .pd-icon  {
 	float:left;
 	font-size:34px;

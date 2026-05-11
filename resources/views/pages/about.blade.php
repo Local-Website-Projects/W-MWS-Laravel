@@ -81,6 +81,21 @@
         text-align: justify;
         font-weight: 300;
     }
+
+    @media screen and (max-width: 768px){
+        .slide{
+            width: 220px;
+            height: 200px;
+            margin-left: -110px;
+        }
+        .slide-description ul li{
+            font-size: 11px !important;
+            line-height: 1 !important;
+        }
+        .slide-Title{
+            font-size: 14px !important;
+        }
+    }
 </style>
 
     <!-- content-->
@@ -185,7 +200,8 @@
                             <div class="col-sm-5">
                                 <div class="dec-img   fl-wrap">
                                     <img src="images/about.jpg" class="respimg" alt="">
-                                    <a class="video_link image-popup" href="https://vimeo.com/34741214"><i class="fas fa-play"></i><span>Play Story video</span></a>
+                                   
+                                    <!--<a class="video_link image-popup" href="https://vimeo.com/34741214"><i class="fas fa-play"></i><span>Play Story video</span></a> -->
                                 </div>
                             </div>
                             <div class="col-sm-7">
@@ -264,7 +280,7 @@
                         <div class="process-wrap fl-wrap">
                             <div class="row">
                                 <div class=" col-sm-6">
-                                    <div class="process-details">
+                                    <div class="process-details" style="background-image: url('{{ asset('images/service/service-1.jpg') }}')">
                                                     <span class="pd-icon">
                                                     <i class="fal fa-tshirt"></i>
                                                     </span>
@@ -287,7 +303,7 @@
                                     </div>
                                 </div>
                                 <div class=" col-sm-6">
-                                    <div class="process-details">
+                                    <div class="process-details" style="background-image: url('{{ asset('images/service/service-2.jpg') }}')">
                                                     <span class="pd-icon">
                                                     <i class="fal fa-handshake"></i>
                                                     </span>
@@ -310,7 +326,7 @@
                                     </div>
                                 </div>
                                 <div class=" col-sm-6">
-                                    <div class="process-details">
+                                    <div class="process-details" style="background-image: url('{{ asset('images/service/service-3.jpg') }}')">
                                                     <span class="pd-icon">
                                                     <i class="fal fa-shield-check"></i>
                                                     </span>
@@ -333,7 +349,7 @@
                                     </div>
                                 </div>
                                 <div class=" col-sm-6">
-                                    <div class="process-details">
+                                    <div class="process-details" style="background-image: url('{{ asset('images/service/service-4.jpg') }}')">
                                                     <span class="pd-icon">
                                                     <i class="fal fa-file-invoice"></i>
                                                     </span>
@@ -379,7 +395,7 @@
                             <div class="slider">
                                 <div class="slide" data-bg="{{ asset('images/steps/1.jpg') }}">
                                     <div class="slide-container">
-                                        <h2 class="slide-Title">1 - Inquiry & Costing</h2>
+                                        <h2 class="slide-Title">1 - Inquiry & Costing (24 Hours)</h2>
                                         <div class="slide-description">
                                             <ul><li>We prioritize speed to keep your business moving by providing a rapid price analysis within 24 hours. Our team performs a strategic factory selection from our vetted network to ensure your project aligns with the best cost-to-quality ratio.</li></ul>
                                         </div>
@@ -388,7 +404,7 @@
                 
                                 <div class="slide" data-bg="{{ asset('images/steps/2.jpg') }}">
                                     <div class="slide-container">
-                                        <h2 class="slide-Title">2 - Sampling & PD</h2>
+                                        <h2 class="slide-Title">2 - Sampling & PD (7 Days)</h2>
                                         <div class="slide-description">
                                             <ul><li>We transform your vision into physical reality through rapid prototyping and tech-pack development. Within just 7 days, we deliver high-quality physical prototypes and lab dips, ensuring your design is technically precise before mass production begins.</li></ul>
                                         </div>
@@ -397,7 +413,7 @@
                 
                                 <div class="slide active" data-bg="{{ asset('images/steps/3.jpg') }}">
                                     <div class="slide-container">
-                                        <h2 class="slide-Title">3 - Order Execution</h2>
+                                        <h2 class="slide-Title">3 - Order Execution (60 Days)</h2>
                                         <div class="slide-description">
                                             <ul><li>Once production starts, we maintain a strict 60-day timeline to ensure your collection moves from concept to container in record time. This phase involves rigorous monitoring of every manufacturing stage, including yarn sourcing, knitting, and dyeing.</li></ul>
                                         </div>
@@ -406,7 +422,7 @@
                 
                                 <div class="slide" data-bg="{{ asset('images/steps/4.jpg') }}">
                                     <div class="slide-container">
-                                        <h2 class="slide-Title">4 - Quality Gate</h2>
+                                        <h2 class="slide-Title">4 - Quality Gate (100%)</h2>
                                         <div class="slide-description">
                                             <ul><li>Our "3-Gate" defense protocol provides total peace of mind through a zero-defect supply chain. We conduct multi-stage inline inspections and a final statistical audit to AQL 1.5/2.5 standards to verify that every item is retail-ready.</li></ul>
                                         </div>
@@ -415,7 +431,7 @@
                 
                                 <div class="slide" data-bg="{{ asset('images/steps/5.png') }}">
                                     <div class="slide-container">
-                                        <h2 class="slide-Title">5 - Logistics</h2>
+                                        <h2 class="slide-Title">5 - Logistics (100%)</h2>
                                         <div class="slide-description">
                                             <ul><li>We guarantee a seamless export experience by managing all documentation and complex logistics requirements. Our commitment to 100% on-time shipments ensures reliable global delivery to your warehouses across the UK, EU, USA, and beyond.</li></ul>
                                         </div>

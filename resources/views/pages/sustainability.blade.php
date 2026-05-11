@@ -82,86 +82,153 @@
                             <h3>Our Sustainability & Global Reach</h3>
                             <p>A Global Network Built on Social Responsibility and Certified Manufacturing Standards</p>
                         </div>
+                        <div class="pr-subtitle">Enviornmental Certificate</div>
                         <!-- portfolio start -->
                         <div class="gallery-items min-pad lightgallery fl-wrap">
                             <!-- gallery-item-->
                             <div class="gallery-item">
                                 <div class="grid-item-holder hov_zoom">
-                                    <img  src="images/certificates/1.webp" alt="">
+                                    <img  src="images/certificates/e1.jpg" alt="">
                                 </div>
                             </div>
                             <!-- gallery-item end-->
                             <!-- gallery-item-->
                             <div class="gallery-item">
                                 <div class="grid-item-holder hov_zoom">
-                                    <img  src="images/certificates/2.webp" alt="">
+                                    <img  src="images/certificates/e3.jpg" alt="">
                                 </div>
                             </div>
                             <!-- gallery-item end-->
                             <!-- gallery-item-->
                             <div class="gallery-item">
                                 <div class="grid-item-holder hov_zoom">
-                                    <img  src="images/certificates/3.webp" alt="">
+                                    <img  src="images/certificates/e2.jpg" alt="">
+                                </div>
+                            </div>
+                            <!-- gallery-item end-->
+                        </div>
+                        <div class="pr-subtitle" style="margin-top: 20px">Social Certificates</div>
+                        <!-- portfolio start -->
+                        <div class="gallery-items min-pad lightgallery fl-wrap">
+                            
+                            <!-- gallery-item-->
+                            <div class="gallery-item">
+                                <div class="grid-item-holder hov_zoom">
+                                    <img  src="images/certificates/s6.jpg" alt="">
                                 </div>
                             </div>
                             <!-- gallery-item end-->
                             <!-- gallery-item-->
                             <div class="gallery-item">
                                 <div class="grid-item-holder hov_zoom">
-                                    <img  src="images/certificates/4.webp" alt="">
+                                    <img  src="images/certificates/s5.jpg" alt="">
                                 </div>
                             </div>
                             <!-- gallery-item end-->
                             <!-- gallery-item-->
                             <div class="gallery-item">
                                 <div class="grid-item-holder hov_zoom">
-                                    <img  src="images/certificates/5.webp" alt="">
+                                    <img  src="images/certificates/s4.jpg" alt="">
                                 </div>
                             </div>
                             <!-- gallery-item end-->
                             <!-- gallery-item-->
                             <div class="gallery-item">
                                 <div class="grid-item-holder hov_zoom">
-                                    <img  src="images/certificates/6.webp" alt="">
+                                    <img  src="images/certificates/s3.jpg" alt="">
                                 </div>
                             </div>
                             <!-- gallery-item end-->
                             <!-- gallery-item-->
                             <div class="gallery-item">
                                 <div class="grid-item-holder hov_zoom">
-                                    <img  src="images/certificates/7.webp" alt="">
+                                    <img  src="images/certificates/s8.jpg" alt="">
                                 </div>
                             </div>
                             <!-- gallery-item end-->
                             <!-- gallery-item-->
                             <div class="gallery-item">
                                 <div class="grid-item-holder hov_zoom">
-                                    <img  src="images/certificates/8.webp" alt="">
+                                    <img  src="images/certificates/s7.jpg" alt="">
                                 </div>
                             </div>
                             <!-- gallery-item end-->
                             <!-- gallery-item-->
                             <div class="gallery-item">
                                 <div class="grid-item-holder hov_zoom">
-                                    <img  src="images/certificates/9.webp" alt="">
+                                    <img  src="images/certificates/s2.jpg" alt="">
                                 </div>
                             </div>
                             <!-- gallery-item end-->
                             <!-- gallery-item-->
                             <div class="gallery-item">
                                 <div class="grid-item-holder hov_zoom">
-                                    <img  src="images/certificates/10.webp" alt="">
+                                    <img  src="images/certificates/s1.jpg" alt="">
                                 </div>
                             </div>
                             <!-- gallery-item end-->
-                            <!-- gallery-item-->
-                            <div class="gallery-item">
-                                <div class="grid-item-holder hov_zoom">
-                                    <img  src="images/certificates/11.webp" alt="">
-                                </div>
-                            </div>
-                            <!-- gallery-item end-->
+                        </div>
 
+                        <div class="pr-subtitle" style="margin-top: 20px">Product Certificates</div>
+                        <!-- portfolio start -->
+                        <div class="gallery-items min-pad lightgallery fl-wrap">
+                            
+                            <!-- gallery-item-->
+                            <div class="gallery-item">
+                                <div class="grid-item-holder hov_zoom">
+                                    <img  src="images/certificates/p6.jpg" alt="">
+                                </div>
+                            </div>
+                            <!-- gallery-item end-->
+                            <!-- gallery-item-->
+                            <div class="gallery-item">
+                                <div class="grid-item-holder hov_zoom">
+                                    <img  src="images/certificates/p5.jpg" alt="">
+                                </div>
+                            </div>
+                            <!-- gallery-item end-->
+                            <!-- gallery-item-->
+                            <div class="gallery-item">
+                                <div class="grid-item-holder hov_zoom">
+                                    <img  src="images/certificates/p4.jpg" alt="">
+                                </div>
+                            </div>
+                            <!-- gallery-item end-->
+                            <!-- gallery-item-->
+                            <div class="gallery-item">
+                                <div class="grid-item-holder hov_zoom">
+                                    <img  src="images/certificates/p3.jpg" alt="">
+                                </div>
+                            </div>
+                            <!-- gallery-item end-->
+                            <!-- gallery-item-->
+                            <div class="gallery-item">
+                                <div class="grid-item-holder hov_zoom">
+                                    <img  src="images/certificates/p8.jpg" alt="">
+                                </div>
+                            </div>
+                            <!-- gallery-item end-->
+                            <!-- gallery-item-->
+                            <div class="gallery-item">
+                                <div class="grid-item-holder hov_zoom">
+                                    <img  src="images/certificates/p7.jpg" alt="">
+                                </div>
+                            </div>
+                            <!-- gallery-item end-->
+                            <!-- gallery-item-->
+                            <div class="gallery-item">
+                                <div class="grid-item-holder hov_zoom">
+                                    <img  src="images/certificates/p2.jpg" alt="">
+                                </div>
+                            </div>
+                            <!-- gallery-item end-->
+                            <!-- gallery-item-->
+                            <div class="gallery-item">
+                                <div class="grid-item-holder hov_zoom">
+                                    <img  src="images/certificates/p1.jpg" alt="">
+                                </div>
+                            </div>
+                            <!-- gallery-item end-->
                         </div>
                         <!-- portfolio end -->
                         <div class="fl-wrap text-block">

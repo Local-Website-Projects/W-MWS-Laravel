@@ -16,8 +16,8 @@
             <li><span>01. Call & Whatsapp </span> <a href="https://wa.me/8801811009788" target="_blank">+880 1811 009 788</a></li>
             <li><span>02. Email </span> <a href="mailto: info@manywears.com">info@manywears.com</a></li>
         </ul>
-        <a href="https://wa.me/8801811009788" class="ajax contacts-btn"><i class="fab fa-whatsapp fa-2x"></i></a>
-        <a href="mailto: info@manywears.com" class="ajax contacts-btn"><i class="fas fa-envelope fa-2x"></i></a>
+        <a href="https://wa.me/8801811009788" class="contacts-btn"><i class="fab fa-whatsapp fa-2x"></i></a>
+        <a href="mailto: info@manywears.com" class="contacts-btn"><i class="fas fa-envelope fa-2x"></i></a>
     </div>
     <!-- header-contacts end-->
 </header>
