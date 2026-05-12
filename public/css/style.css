@@ -4902,14 +4902,8 @@ section.parallax-section .bg {
     bottom: 250px;
 }
 }
-@media only screen and (max-width: 992px) {
-.header-contacts ul{
-	display:none;
-}
-.contacts-btn {
-	display:block;
-	margin-top: 10px;
-}
+@media only screen and (max-width: 1400px) {
+
 .gallery-items_fs .gallery-item , .gallery-items_fs .gallery-item.gallery-item-second {
 	width:33.3%;
 }
@@ -5688,4 +5682,25 @@ new timeline design*/
         margin-left: 40px;
         margin-top: 0; /* Removemos el margen superior */
     }
+}
+.getInTouch{
+	display: none;
+}
+
+@media only screen and (max-width: 1400px){
+	.full_info{
+		display:none;
+	}
+	.getInTouch{
+		display: block !important;
+	}
+}
+@media only screen and (max-width: 492px){
+	.contacts-btn {
+		display:block;
+		margin-top: 10px;
+	}
+	.getInTouch{
+		display: none !important;
+	}
 }

@@ -303,7 +303,7 @@
                                     </div>
                                 </div>
                                 <div class=" col-sm-6">
-                                    <div class="process-details" style="background-image: url('{{ asset('images/service/service-2.jpg') }}')">
+                                    <div class="process-details" style="background-image: url('{{ asset('images/service/service-3.jpg') }}')">
                                                     <span class="pd-icon">
                                                     <i class="fal fa-handshake"></i>
                                                     </span>
@@ -326,7 +326,7 @@
                                     </div>
                                 </div>
                                 <div class=" col-sm-6">
-                                    <div class="process-details" style="background-image: url('{{ asset('images/service/service-3.jpg') }}')">
+                                    <div class="process-details" style="background-image: url('{{ asset('images/service/service-4.jpg') }}')">
                                                     <span class="pd-icon">
                                                     <i class="fal fa-shield-check"></i>
                                                     </span>
@@ -349,7 +349,7 @@
                                     </div>
                                 </div>
                                 <div class=" col-sm-6">
-                                    <div class="process-details" style="background-image: url('{{ asset('images/service/service-4.jpg') }}')">
+                                    <div class="process-details" style="background-image: url('{{ asset('images/service/service-2.jpg') }}')">
                                                     <span class="pd-icon">
                                                     <i class="fal fa-file-invoice"></i>
                                                     </span>
