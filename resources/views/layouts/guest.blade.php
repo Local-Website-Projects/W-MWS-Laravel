@@ -3,13 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        @env(['local', 'staging', 'testing'])
-            <meta name="robots" content="noindex, nofollow">
-        @endenv
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>@yield('title') - MWS</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <meta name="robots" content="index, follow"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">     
         <meta name="keywords" content="@yield('keywords')"/>
         <meta name="description" content="@yield('description')"/>
         <!--=============== css  ===============-->

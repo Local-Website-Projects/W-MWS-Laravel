@@ -1005,7 +1005,7 @@ function initZonar() {
 			});
 		}
 		var greenIcon = L.icon({
-			iconUrl: '/images/marker.png',
+			iconUrl: window.Laravel.baseUrl + '/images/marker.png',
 			iconSize: [40, 40],
 			popupAnchor: [0, -26]
 		});

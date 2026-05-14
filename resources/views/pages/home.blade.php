@@ -4,7 +4,7 @@
 
 @section('keywords', '')
 
-@section('description', '')
+@section('description', 'Crafting Quality Powering the Global Apparel Supply Chain')
 
 @section('content')
     <div class="content full-height" data-pagetitle="Home">
@@ -86,13 +86,13 @@
                             <!-- swiper-slide end-->
                             <!-- swiper-slide-->
                             <div class="swiper-slide">
-                                <div class="bg"  data-bg="images/bg/7.webp" data-swiper-parallax="20%"></div>
+                                <div class="bg"  data-bg="images/bg/8.webp" data-swiper-parallax="20%"></div>
                                 <div class="overlay"></div>
                             </div>
                             <!-- swiper-slide end-->
                             <!-- swiper-slide-->
                             <div class="swiper-slide">
-                                <div class="bg"  data-bg="images/bg/8.webp" data-swiper-parallax="20%"></div>
+                                <div class="bg"  data-bg="images/bg/7.webp" data-swiper-parallax="20%"></div>
                                 <div class="overlay"></div>
                             </div>
                             <!-- swiper-slide end-->
