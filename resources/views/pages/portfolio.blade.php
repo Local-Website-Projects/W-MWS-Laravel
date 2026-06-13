@@ -11,6 +11,9 @@
     .hero-section-dec.color-bg{
         display:none;
     }
+    .grid-item-holder {
+        cursor: pointer;
+    }
 </style>
 @endpush
 
@@ -84,48 +87,6 @@
                 <!-- portfolio start -->
                 <div class="gallery-items min-pad    fl-wrap  " id="port-scroll">
 
-                    <!-- gallery-item-->
-                    <div class="gallery-item accessories">
-                        <div class="grid-item-holder hov_zoom">
-                            <img  src="{{ asset('images/folio/accessories/1.png') }}" alt="">
-                            <div class="grid-det">
-                                <a href="{{ asset('images/folio/accessories/1.png') }}" class="grid-media-zoom image-popup"><i class="far fa-search"></i></a>
-                                <div class="grid-det_category"><a href="#">Portfolio  </a> <a href="#"> </a></div>
-                                <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Accessories<i class="fal fa-long-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- gallery-item end-->
-                    <!-- gallery-item-->
-                    <div class="gallery-item accessories">
-                        <div class="grid-item-holder hov_zoom">
-                            <img  src="{{ asset('images/folio/accessories/2.png') }}" alt="">
-                            <div class="grid-det">
-                                <a href="{{ asset('images/folio/accessories/2.png') }}" class="grid-media-zoom image-popup"><i class="far fa-search"></i></a>
-                                <div class="grid-det_category"><a href="#">Portfolio  </a> <a href="#"> </a></div>
-                                <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Accessories<i class="fal fa-long-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- gallery-item end-->
-                    <!-- gallery-item-->
-                    <div class="gallery-item accessories">
-                        <div class="grid-item-holder hov_zoom">
-                            <img  src="{{ asset('images/folio/accessories/3.png') }}" alt="">
-                            <div class="grid-det">
-                                <a href="{{ asset('images/folio/accessories/3.png') }}" class="grid-media-zoom image-popup"><i class="far fa-search"></i></a>
-                                <div class="grid-det_category"><a href="#">Portfolio  </a> <a href="#"> </a></div>
-                                <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Accessories<i class="fal fa-long-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- gallery-item end-->
                     <!-- gallery-item-->
                     <div class="gallery-item denim">
                         <div class="grid-item-holder hov_zoom">
@@ -398,21 +359,6 @@
                     <!-- gallery-item end-->
                     
                     <!-- gallery-item-->
-                    <div class="gallery-item home-textiles">
-                        <div class="grid-item-holder hov_zoom">
-                            <img  src="{{ asset('images/folio/hometextile/1.jpeg') }}"    alt="">
-                            <div class="grid-det">
-                                <a href="{{ asset('images/folio/hometextile/1.jpeg') }}" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
-                                <div class="grid-det_category"><a href="#">Portfolio</a> <a href="#"> </a></div>
-                                <div class="grid-det-item">
-                                    <a href="#" class="ajax grid-det_link">Home Textiles<i class="fal fa-long-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- gallery-item end-->
-                    
-                    <!-- gallery-item-->
                     <div class="gallery-item outerwear">
                         <div class="grid-item-holder hov_zoom">
                             <img  src="{{ asset('images/folio/outerwear/1.jpeg') }}"    alt="">
@@ -454,6 +400,64 @@
                         </div>
                     </div>
                     <!-- gallery-item end-->
+
+                    <!-- gallery-item-->
+                    <div class="gallery-item accessories">
+                        <div class="grid-item-holder hov_zoom">
+                            <img  src="{{ asset('images/folio/accessories/1.png') }}" alt="">
+                            <div class="grid-det">
+                                <a href="{{ asset('images/folio/accessories/1.png') }}" class="grid-media-zoom image-popup"><i class="far fa-search"></i></a>
+                                <div class="grid-det_category"><a href="#">Portfolio  </a> <a href="#"> </a></div>
+                                <div class="grid-det-item">
+                                    <a href="#" class="ajax grid-det_link">Accessories<i class="fal fa-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- gallery-item end-->
+                    <!-- gallery-item-->
+                    <div class="gallery-item accessories">
+                        <div class="grid-item-holder hov_zoom">
+                            <img  src="{{ asset('images/folio/accessories/2.png') }}" alt="">
+                            <div class="grid-det">
+                                <a href="{{ asset('images/folio/accessories/2.png') }}" class="grid-media-zoom image-popup"><i class="far fa-search"></i></a>
+                                <div class="grid-det_category"><a href="#">Portfolio  </a> <a href="#"> </a></div>
+                                <div class="grid-det-item">
+                                    <a href="#" class="ajax grid-det_link">Accessories<i class="fal fa-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- gallery-item end-->
+                    <!-- gallery-item-->
+                    <div class="gallery-item accessories">
+                        <div class="grid-item-holder hov_zoom">
+                            <img  src="{{ asset('images/folio/accessories/3.png') }}" alt="">
+                            <div class="grid-det">
+                                <a href="{{ asset('images/folio/accessories/3.png') }}" class="grid-media-zoom image-popup"><i class="far fa-search"></i></a>
+                                <div class="grid-det_category"><a href="#">Portfolio  </a> <a href="#"> </a></div>
+                                <div class="grid-det-item">
+                                    <a href="#" class="ajax grid-det_link">Accessories<i class="fal fa-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- gallery-item end-->
+
+                    <!-- gallery-item-->
+                    <div class="gallery-item home-textiles">
+                        <div class="grid-item-holder hov_zoom">
+                            <img  src="{{ asset('images/folio/hometextile/1.jpeg') }}"    alt="">
+                            <div class="grid-det">
+                                <a href="{{ asset('images/folio/hometextile/1.jpeg') }}" class="grid-media-zoom   image-popup"><i class="far fa-search"></i></a>
+                                <div class="grid-det_category"><a href="#">Portfolio</a> <a href="#"> </a></div>
+                                <div class="grid-det-item">
+                                    <a href="#" class="ajax grid-det_link">Home Textiles<i class="fal fa-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- gallery-item end-->
                 </div>
                 <!-- portfolio end -->
             </div>
@@ -470,6 +474,31 @@
                 top: window.innerHeight,
                 left: 0,
                 behavior: 'smooth'
+            });
+        });
+
+        $(document).ready(function() {
+            // Click anywhere on grid-item-holder triggers lightGallery image view
+            $(document).on('click', '.grid-item-holder', function(e) {
+                // If they clicked on an anchor tag inside (except .image-popup), let that anchor handle the click
+                if ($(e.target).closest('a').not('.image-popup').length) {
+                    return;
+                }
+                
+                // If they clicked directly on the image-popup anchor, lightGallery handles it
+                if ($(e.target).closest('a').hasClass('image-popup')) {
+                    return;
+                }
+
+                // Otherwise, trigger the click on the .image-popup element in this card
+                $(this).find('.image-popup').trigger('click');
+            });
+
+            // Adjust custom hover cursor behavior for grid item holder
+            $(document).on('mouseenter', '.grid-item-holder', function() {
+                $('.element-item').addClass('elem_hover');
+            }).on('mouseleave', '.grid-item-holder', function() {
+                $('.element-item').removeClass('elem_hover');
             });
         });
     </script>

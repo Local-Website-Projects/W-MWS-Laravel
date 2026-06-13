@@ -51,6 +51,10 @@
         background-color: rgba(255, 255, 255, 0.05);
         backdrop-filter: blur(8px);
         -webkit-backdrop-filter: blur(8px);
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
     }
 
     .slide.active {
@@ -393,7 +397,7 @@
                 
                         <div class="roadmap-timeline-wrapper">
                             <div class="slider">
-                                <div class="slide" data-bg="{{ asset('images/steps/1.jpg') }}">
+                                <div class="slide active" data-bg="{{ asset('images/steps/1.jpg') }}">
                                     <div class="slide-container">
                                         <h2 class="slide-Title">1 - Inquiry & Costing (24 Hours)</h2>
                                         <div class="slide-description">
@@ -411,7 +415,7 @@
                                     </div>
                                 </div>
                 
-                                <div class="slide active" data-bg="{{ asset('images/steps/3.jpg') }}">
+                                <div class="slide" data-bg="{{ asset('images/steps/3.jpg') }}">
                                     <div class="slide-container">
                                         <h2 class="slide-Title">3 - Order Execution (60 Days)</h2>
                                         <div class="slide-description">
@@ -544,7 +548,55 @@
             $wrapper = $('.roadmap-timeline-wrapper');
             if(!$wrapper.length) return;
 
-            $(document).on('click', '.slide', function() {
+            var startX = 0;
+            var startY = 0;
+            var isDragging = false;
+            var dragThreshold = 10;
+            var swipeThreshold = 50;
+
+            $wrapper.on('mousedown touchstart', function(e) {
+                isDragging = true;
+                startX = e.pageX || (e.originalEvent.touches && e.originalEvent.touches[0].pageX);
+                startY = e.pageY || (e.originalEvent.touches && e.originalEvent.touches[0].pageY);
+            });
+
+            $(document).on('mouseup touchend', function(e) {
+                if (!isDragging) return;
+                isDragging = false;
+                var endX = e.pageX || (e.originalEvent.changedTouches && e.originalEvent.changedTouches[0].pageX);
+                var endY = e.pageY || (e.originalEvent.changedTouches && e.originalEvent.changedTouches[0].pageY);
+                if (startX === undefined || endX === undefined) return;
+                
+                var diffX = endX - startX;
+                var diffY = endY - startY;
+
+                if (Math.abs(diffX) > swipeThreshold && Math.abs(diffX) > Math.abs(diffY)) {
+                    var activeIndex = $('.slide.active').index();
+                    if (diffX > 0) {
+                        if (activeIndex > 0) {
+                            $slides.removeClass('active');
+                            $slides.eq(activeIndex - 1).addClass('active');
+                            position();
+                            updateVisuals();
+                        }
+                    } else {
+                        if (activeIndex < $slides.length - 1) {
+                            $slides.removeClass('active');
+                            $slides.eq(activeIndex + 1).addClass('active');
+                            position();
+                            updateVisuals();
+                        }
+                    }
+                }
+            });
+
+            $(document).on('click', '.slide', function(e) {
+                if (startX !== undefined && e.pageX !== undefined) {
+                    var clickDiffX = Math.abs(e.pageX - startX);
+                    if (clickDiffX > dragThreshold) {
+                        return;
+                    }
+                }
                 $('.slide').removeClass('active');
                 $(this).addClass('active');
                 position();

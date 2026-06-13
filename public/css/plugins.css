@@ -72,6 +72,7 @@ audio,video,canvas {max-width: 100%;}
     content: "\f010"; /* Search-minus */
 }
 
+.lg-toolbar .lg-close::after,
 .lg-close::after {
     content: "\f00d"; /* Times / X mark */
 }
